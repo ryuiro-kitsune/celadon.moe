@@ -13,4 +13,4 @@ I am interested in FOSS technology, writing, BusyBox/Linux[^1], and Coffee. But 
 <footer><p>This site was built with [11ty](https://www.11ty.dev/) the Static Site Generator.<p></footer>
 
 
-[^1] Or Gnu/Linux if you must.
+[^1]: Or Gnu/Linux if you must.

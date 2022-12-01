@@ -1,4 +1,16 @@
-module.exports = function(eleventyConfig) {
+module.exports = function(eleventyConfig) {    
+    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addCollection("posts", function(collection) {
+        return collection.getFilteredByGlob("posts/*.md");
+    });
+    return {
+	markdownTemplateEngine: "njk",
+	htmlTemplateEngine: "pug"
+    }
+};
+
+module.exports = function (config) {
     // Markdown experiement
     let markdownIt = require("markdown-it");
     let markdownItFootnote = require("markdown-it-footnote");
@@ -14,14 +26,4 @@ module.exports = function(eleventyConfig) {
     // set the library to process markdown files
     config.setLibrary("md", markdownLib);
     
-    
-    eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addCollection("posts", function(collection) {
-        return collection.getFilteredByGlob("posts/*.md");
-    });
-    return {
-	markdownTemplateEngine: "njk",
-	htmlTemplateEngine: "pug"
-    }
 }
