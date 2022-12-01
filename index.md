@@ -6,4 +6,3 @@ title: Celadon.moe
 
 Beep boop
 
-[Link](posts/In Death's Shadow.md)
