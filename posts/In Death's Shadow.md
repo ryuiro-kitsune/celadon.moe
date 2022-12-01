@@ -1,7 +1,5 @@
 ---
-title: In Death\'s Shadow
+layout: post.liquid
+title: In Deaths Shadow
 ---
-
-# Test
-
-fjidoid
+Da stuff is here.
