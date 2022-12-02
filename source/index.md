@@ -3,7 +3,7 @@ layout: index.njk
 title: Celadon.moe
 ---
 
-# {{ title }}
+# {{ title }}{class="text-green-800 font-bold"}
 
 
 </br>
@@ -18,4 +18,4 @@ I am interested in FOSS technology, writing, BusyBox/Linux[^1], and Coffee. But 
 <footer><p>This site was built with <a href="https://www.11ty.dev/">11ty</a> the Static Site Generator.<p></footer>
 
 
-[^1]: Or Gnu/Linux if you must.
+[^1]: Or Gnu/Linux if you must.{class="text-green-800 font-bold"}
