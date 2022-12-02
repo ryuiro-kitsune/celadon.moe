@@ -22,11 +22,21 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
     });
-    return {
-        dir: { input: 'src', output: '_site' }
-    };
+    
     return {
 	markdownTemplateEngine: "njk",
-	htmlTemplateEngine: "pug"
+	dir: { input: 'source', output: '_site' },
     };
+    markdownItAttrs = require('markdown-it-attrs');
+
+md.use(markdownItAttrs, {
+  // optional, these are default options
+  leftDelimiter: '{',
+  rightDelimiter: '}',
+  allowedAttributes: []  // empty array = all attributes are allowed
+});
+
+var src = '# header {.green #id}\nsome text {with=attrs and="attrs with space"}';
+var res = md.render(src);
+
 }
