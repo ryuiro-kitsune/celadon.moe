@@ -23,7 +23,10 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByGlob("posts/*.md");
     });
     return {
+        dir: { input: 'src', output: '_site' }
+    };
+    return {
 	markdownTemplateEngine: "njk",
 	htmlTemplateEngine: "pug"
-    }
+    };
 }

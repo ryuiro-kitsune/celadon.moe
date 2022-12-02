@@ -1,4 +1,5 @@
 ---
+layout: index.njk
 title: Celadon.moe
 ---
 
