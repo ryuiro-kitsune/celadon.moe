@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
 
     // Markdown experiement
     
-    let markdownIt = require("markdown-it")
+    let markdownIt = require("markdown-it");
     let markdownItFootnote = require("markdown-it-footnote");
     
     let options = {
