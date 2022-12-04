@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("css");
-	eleventyConfig.addPassthroughCopy("*.html");
+    eleventyConfig.addPassthroughCopy("*.html");
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
     });
@@ -28,16 +28,4 @@ module.exports = function(eleventyConfig) {
 	markdownTemplateEngine: "njk",
 	dir: { input: 'source', output: '_site' },
     };
-    markdownItAttrs = require('markdown-it-attrs');
-
-md.use(markdownItAttrs, {
-  // optional, these are default options
-  leftDelimiter: '{',
-  rightDelimiter: '}',
-  allowedAttributes: []  // empty array = all attributes are allowed
-});
-
-var src = '# header {.green #id}\nsome text {with=attrs and="attrs with space"}';
-var res = md.render(src);
-
 }
