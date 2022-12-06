@@ -1,0 +1,52 @@
+body {
+    background-color: #002b36;
+    color: #839496;
+    font-family: "Cousine Nerd Font", "Courier New", monospace;
+    margin: auto;
+    border-style: dashed;
+    border-color: #859900;
+    border-width: 1rem;
+}
+
+a {
+    color: #2aa198;
+}
+
+h1 {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+article {
+    font-family: "Noto Serif", Serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #073642;
+  border-style: dashed;
+  border-color: #dc322f;
+  border-width: .25rem;
+}
+
+
+ li {
+     display: inline;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    color: #eee8d5;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fdf6e3;
+}
+
+.active {
+    background-color: #fdf6e3;
+}
