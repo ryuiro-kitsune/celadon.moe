@@ -18,13 +18,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLib);
     
     eleventyConfig.addPassthroughCopy("assets");
-<<<<<<< Updated upstream
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("*.html");
-=======
     eleventyConfig.addPassthroughCopy("source/css/");
 	eleventyConfig.addPassthroughCopy("*.html");
->>>>>>> Stashed changes
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
     });
