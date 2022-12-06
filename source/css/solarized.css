@@ -5,7 +5,6 @@ body {
     border-style: dashed;
     border-color: #859900;
     border-width: .5rem;
-    padding
 }
 
 a {
@@ -53,8 +52,8 @@ li a:hover {
 
 p {
     display: block;
-    padding-left: 5em;
-    padding-right: 5em;
+    margin: auto;
+    width: 150em;
 }
 
 .footnotes {
