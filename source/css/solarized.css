@@ -2,10 +2,10 @@ body {
     background-color: #002b36;
     color: #839496;
     font-family: "Cousine Nerd Font", "Courier New", monospace;
-    margin: auto;
     border-style: dashed;
     border-color: #859900;
-    border-width: 1rem;
+    border-width: .5rem;
+    padding
 }
 
 a {
@@ -49,4 +49,10 @@ li a:hover {
 
 .active {
     background-color: #fdf6e3;
+}
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
