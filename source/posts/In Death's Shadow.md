@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: story.njk
 title: In Deaths Shadow
 tags: Posts
 ---
