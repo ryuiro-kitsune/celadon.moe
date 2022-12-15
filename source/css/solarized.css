@@ -13,9 +13,14 @@ a {
 }
 
 h1 {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 1em;
+}
 
+h2 {
+    color: #2aa198;
+}
+    
 article {
     font-family: "Noto Serif", Serif;
 }
@@ -59,4 +64,8 @@ p {
 
 .footnotes {
     padding-top: 12em;
+}
+
+.center {
+    text-align: center;
 }
