@@ -17,6 +17,7 @@ h1 {
 
 article {
     font-family: "Noto Serif", Serif;
+    text-align: center;
 }
 
 ul {
@@ -55,7 +56,5 @@ li a:hover {
 }
 
 .center {
-    margin: auto;
-    width: 50%;
-    padding: 3em;
-}
+    text-align: center;
+    }
