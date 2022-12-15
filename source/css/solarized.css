@@ -24,6 +24,8 @@ h2 {
 article {
     font-family: "Noto Serif", Serif;
     text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .menu {
