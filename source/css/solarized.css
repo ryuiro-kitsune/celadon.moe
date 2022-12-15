@@ -14,6 +14,7 @@ a {
 h1 {
     padding-top: .5rem;
     padding-bottom: 1em;
+    padding-left: 3em;
 }
 
 h2 {
@@ -38,7 +39,7 @@ article {
 
 
  li {
-     display: inline;
+ color: #6c71c4;
 }
 
 li a {
@@ -46,6 +47,7 @@ li a {
     padding: 14px 16px;
     color: #eee8d5;
     text-decoration: none;
+    display: inline;
 }
 
 li a:hover {
