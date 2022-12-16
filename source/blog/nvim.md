@@ -1,5 +1,5 @@
 ---
-title: My Neovim Journey; Day Zero
+title: My Neovim Journey
 layout: blog.njk
 ---
 
