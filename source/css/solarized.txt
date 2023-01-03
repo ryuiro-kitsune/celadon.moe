@@ -1,3 +1,25 @@
+|-----------------|    		    |------------------|
+|COLOR SCHEME DARK|		    |COLOR SCHEME LIGHT|
+|-----------------|		    |------------------|
+
+FUNCTION	COLOR	HEX	    FUNCTION		COLOR	HEX    
+-------------	------	-------	    -------------	-----	-------
+BACKGROUND	base03	#002b36	    BACKGROUND		base3	#fdf6e3
+BACKGROUND-HL	base02	#073642	    BACKGROUND-HL	base2	#eee8d5
+COMMENTS	base01	#586e75	    COMMENTS		base1	#93a1a1
+BODY/PRIMARY	base00	#657b83	    BODY/PRIMARY	base00	#657b83
+EMPHASIS	base1	#93a1a1	    EMPHASIS		base01	#586e75
+YELLOW		yellow	#b58900	    YELLOW		yellow	#b58900
+ORANGE		orange	#cb4b16	    ORANGE		orange	#cb4b16
+RED		red	#dc322f	    RED			red	#dc322f
+MAGENTA		magenta	#d33682	    MAGENTA		magenta	#d33682
+VIOLET		violet	#6c71c4	    VIOLET		violet	#6c71c4
+BLUE		blue	#268bd2	    BLUE		blue	#268bd2
+CYAN		cyan	#2aa198	    CYAN		cyan	#2aa198
+GREEN		green	#859900	    GREEN		green	#859900
+
+
+
 SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
 --------- ------- ---- -------  ----------- ---------- ----------- -----------
 base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21

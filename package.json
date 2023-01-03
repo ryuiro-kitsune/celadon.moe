@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy; tailwindcss -i ./source/css/tailwind.css -o ./_site/css/style.css"
+    "test": "npx @11ty/eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",

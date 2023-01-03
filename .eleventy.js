@@ -19,7 +19,9 @@ module.exports = function(eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("source/css/");
-	eleventyConfig.addPassthroughCopy("*.html");
+    eleventyConfig.addPassthroughCopy("*.html");
+    eleventyConfig.addPassthroughCopy("*.xhtml");
+    eleventyConfig.addPassthroughCopy("source/images/");
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
     });
