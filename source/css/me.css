@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-color: #002b36;
+    color: #657b83;
+}
+
+.id {
+    top: 12em;
+    left: 3em;
+    height: 10em;
+    width: 75%;
+    text-align: left;
+    background-color: #073642;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #2aa198;
+    box-shadow: 0 0 10px 3px #2aa198;
+    margin-left: 2em;
+}
+
+.u-logo {
+    width: 8em;
+    padding-top: 1em;
+    position: static;
+    padding-left: 2em;
+    margin-right: 1.5em;
+}
+
+.p-name {
+    text-align: left;
+    position: relative;
+    top: -.4em;
+}
