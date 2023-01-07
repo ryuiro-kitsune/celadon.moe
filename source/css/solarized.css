@@ -48,3 +48,8 @@ li a:hover {
 .center {
     text-align: center;
 }
+
+.warning {
+    color: #dc322f;
+    background-color: #b58900;
+}
