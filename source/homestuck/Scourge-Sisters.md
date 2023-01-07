@@ -10,6 +10,9 @@ This is not *supposed* to be a comically incoherent rant about how two fictional
 Read at your own digression
 </div>
 
+<br />
+<br />
+
 ## Vriska is a bad person.
 
 Let us take a quick moment to acknowledge that Vriska is a bad person.

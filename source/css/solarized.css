@@ -36,5 +36,5 @@ h2 {
 
 .warning {
     color: #dc322f;
-    background-color: #b58900;
+    border: 3px dotted #dc322f;
 }
