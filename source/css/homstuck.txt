@@ -1,0 +1,35 @@
+HemoSpectrum
+============
+Rust	#A10000
+Bronze	#A25203
+Gold	#A1A100
+Lime	#658200
+Olive	#416600
+Jade	#078446
+Teal	#008282
+Cobalt	#004182
+Indigo	#0021CB
+Purple	#631DB4
+Violet	#6A006A
+Fuchsia	#99004D
+
+Text Colors
+===========
+Karkat		#626262
+Jane Crocker	#00D5F2
+Jake English	#1F9400
+Dirk Strider	#F2A400
+Davsprite	#F2A400
+Roxy Lalonde	#FF6FF2
+JasperSprite	#F146EF
+John Egbert	#0715CD
+Jade Harley	#48C925
+Dave Strider	#E00707
+Rose Lalonde	#B536DA
+
+Troll Body Colors
+=================
+Body	#C4C4C4
+Horn-1	#FFBA29
+Horn-2	#FF9000
+Horn-3	#FF4200
