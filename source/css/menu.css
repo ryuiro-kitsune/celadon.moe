@@ -1,0 +1,25 @@
+ul.menu{
+    overflow: hidden;
+    position: fixed;
+    top: 2em;
+    left: 1em;
+    list-style: none;
+    white-space: nowrap;
+}
+
+ul.menu li a {
+      display: inline-block;
+    color: #85990;
+        width: 10em;
+    text-decoration: none;
+    text-align: center;
+        border: 1px dashed #d33682;
+}
+
+ul.menu li a:hover {
+    background-color: #073642;
+}
+
+.active {
+    background-color: #073642;
+}
