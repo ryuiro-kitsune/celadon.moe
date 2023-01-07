@@ -1,6 +1,7 @@
 ---
 title: Vriska and Terezi are bad for each other
 layout: article.njk
+tags: homestuck
 ---
 
 <div class="warning">This is not *supposed* to be a comically incoherent rant about how two fictional characters shouldn't be shipped, however it is quickly looking to become that. Also seemingly just a rant about how Vriska was treated.
