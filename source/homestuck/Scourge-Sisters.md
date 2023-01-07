@@ -4,9 +4,11 @@ layout: article.njk
 tags: homestuck
 ---
 
-<div class="warning">This is not *supposed* to be a comically incoherent rant about how two fictional characters shouldn't be shipped, however it is quickly looking to become that. Also seemingly just a rant about how Vriska was treated.
+<div class="warning">
+This is not *supposed* to be a comically incoherent rant about how two fictional characters shouldn't be shipped, however it is quickly looking to become that. Also seemingly just a rant about how Vriska was treated.
 
-Read at your own digression</div>
+Read at your own digression
+</div>
 
 ## Vriska is a bad person.
 
@@ -90,6 +92,6 @@ I promise this isn't some crazed JohnVris shipper making a rant post. Well, I do
 
 Anyways, ship VrisRezi, don't ship VrisRezi. Just please don't be a dick in the comments.
 
-</br>
+<br />
 
 OH ALSO, VRISKA IS CANONICALLY ATTRACTED TO NIC CAGE! I CAN'T BEILIVE I NEARLY FORGOT TO BRING THAT UP!

@@ -4,7 +4,7 @@ body {
     font-family: "Cousine Nerd Font", "Courier New", monospace;
     border-style: dashed;
     border-color: #859900;
-    border-width: .5rem;
+    border-width: 1rem;
 }
 
 a {
@@ -14,34 +14,11 @@ a {
 h1 {
     padding-top: .5rem;
     padding-bottom: 1em;
-    padding-left: 3em;
+    padding-left: 25%;
 }
 
 h2 {
     color: #2aa198;
-}
-    
-article {
-    font-family: "Noto Serif", Serif;
-    text-align: center;
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #073642;
-  border-style: dashed;
-  border-color: #dc322f;
-  border-width: .25rem;
-}
-
-
- li {
- color: #6c71c4;
 }
 
 li a {
