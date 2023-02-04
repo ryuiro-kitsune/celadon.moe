@@ -1,0 +1,62 @@
+---
+title: The Heir & The Thief
+---
+<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/solarized.css" rel="stylesheet">
+    <link href="/css/article.css" rel="stylesheet">
+    <link href="/css/menu.css" rel="stylesheet">
+    <link href="/css/homestuck.css" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAVUExURQAAAAAAAACAAAAFAAAiAAB/AAAMAIxBHj0AAAABdFJOUwBA5thmAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAAd0SU1FB+YMGgYTGICTrbMAAABXSURBVAjXTY7REYAwDEJpJ2hwAWEDh3AR9x9C0vNDvt4RSAJgUAvRcNTEBsVQSFyYEkWeoHzRVKDsClgdpgM77Ixi3TsTYGAqFac+1IksxGE/rv/R740XTYcL8o5XBewAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTItMjZUMDY6MTk6MjQrMDA6MDCfpmNfAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEyLTI2VDA2OjE5OjI0KzAwOjAw7vvb4wAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMi0xMi0yNlQwNjoxOToyNCswMDowMLnu+jwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC">
+    <title>{{ title }}</title>
+  </head>
+  <style>
+    h1 {
+	color: #000;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+	font-size: 2rem;
+    }
+    h2 {
+	color:#000;
+	font-size: 1rem;
+	padding-top: 0;
+	margin-top: 0;
+    }
+  </style>
+  <body style="background-color:#002b36">
+
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/homestuck/">Homestuck</a></li>
+      <li><a href="/fanfiction/">Stories</a></li>
+    </ul>
+    
+    <div style="padding-bottom: 300px">
+      <article>
+	<div class="storybox">
+	  <h1>{{ title }}</h1>
+	  <h2>{{ subtitle }}</h2>
+	<br />
+	{{ content | safe }}
+	<br />
+	<a href="/fanfiction/heir-and-thief/{{ previous }}/"><==</a> <a href="/fanfiction/heir-and-thief/">Root</a> <a href="/fanfiction/heir-and-thief/{{ next }}/">==></a>
+	  </div>
+      </article>
+
+    </div>
+
+    <!--<div class="card">
+
+	<img src="/images/logo.png" width="256rem" style="padding-left: 5rem;" />
+
+	<p style="font-size: 2em; max-width: 16em;"><span style="color: #268bd2">Celadon Camellia</span> is a person who lives in the internet and for some reason has dedicated an entire website to his bullshit. <br />Enjoy! ;)</p>
+
+    </div>-->
+
+  </body>
+</html>
