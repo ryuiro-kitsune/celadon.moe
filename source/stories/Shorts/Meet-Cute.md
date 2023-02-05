@@ -1,7 +1,7 @@
 ---
 title: Meet-Cute
 layout: story.njk
-tags: fanfic
+tags: story
 ---
 
 David Elizabeth Strider had just fucked up.
