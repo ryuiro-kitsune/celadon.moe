@@ -1,11 +1,13 @@
 ---
 title: She's Back! Now What?
 subtitle: Chapter two of "The Heir and The Thief"
-tags: vriska
+tags: 
+  - vriska
+  - story
 layout: HaT.njk
 previous: retcon
-next: 404
-date: 
+next: 
+date: 2023-02-03
 ---
 The Heir and the Thief coalesce back into physical forms from the breeze that carried them. The Thief remains in her prone position from before, with the Heir holding her head up.
 
