@@ -1,5 +1,10 @@
-module.exports = function(eleventyConfig) {
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
+module.exports = function(eleventyConfig) {
+        //Rss
+      eleventyConfig.addPlugin(pluginRss);
+
+    
     // Markdown experiement
     
     let markdownIt = require("markdown-it");
@@ -23,6 +28,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("source/images/");
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
+	return collection.images("images/*");
     });
     
     return {

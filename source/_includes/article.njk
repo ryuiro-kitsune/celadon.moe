@@ -1,5 +1,6 @@
 ---
 title: Default Title
+permalink: "/articles/{{ title | slugify }}/"
 ---
 <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -15,12 +16,7 @@ title: Default Title
   </head>
   <body>
 
-    <ul class="menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/homestuck/">Homestuck</a></li>
-      <li><a href="/fanfiction/">Stories</a></li>
-    </ul>
-
+    {% include "menu.html" %}
     
     <div>
       <article>

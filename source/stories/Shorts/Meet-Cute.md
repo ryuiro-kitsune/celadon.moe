@@ -1,7 +1,10 @@
 ---
 title: Meet-Cute
 layout: story.njk
-tags: story
+tags: 
+  - story
+  - fanfic
+authornote: I am bored
 ---
 
 David Elizabeth Strider had just fucked up.

@@ -1,5 +1,5 @@
 ---
-title: The Heir & The Thief
+permalink: "/stories/heir-and-thief/{{ title | slugify }}/"
 ---
 <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -30,11 +30,7 @@ title: The Heir & The Thief
   </style>
   <body style="background-color:#002b36">
 
-    <ul class="menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/homestuck/">Homestuck</a></li>
-      <li><a href="/fanfiction/">Stories</a></li>
-    </ul>
+    {% include "menu.html" %}
     
     <div style="padding-bottom: 300px">
       <article>

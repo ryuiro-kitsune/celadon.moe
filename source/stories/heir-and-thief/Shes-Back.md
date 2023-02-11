@@ -3,11 +3,11 @@ title: She's Back! Now What?
 subtitle: Chapter two of "The Heir and The Thief"
 tags: 
   - vriska
-  - story
 layout: HaT.njk
 previous: retcon
 next: 
 date: 2023-02-03
+author-note: Sorry this took longer than it was supposed to, I've been going through it in Socialology recently and its sapped my motivation to actually work on anything I care about. Next chapter will be up soon if I can help it. :)
 ---
 The Heir and the Thief coalesce back into physical forms from the breeze that carried them. The Thief remains in her prone position from before, with the Heir holding her head up.
 
@@ -110,4 +110,8 @@ The rest of them quietly pushed him into the corner and continued their strategy
 
 ---
 
-John
+It was a day later and John was looking for Vriska. He hadn't seen her since the day prior when they left their session and he was moderately worried.
+
+He didn't think Vriska would be the type to self destruct after going through hardship, however there was so much he didn't know. He didn't know about how Trolls worked, he didn't know the details of what had happened to her, and he didn't know her all that well in general. He had spent one day getting to know her and had no idea whether her quiet absence from the group was utterly mundane, or dangerously abnormal.
+
+Davesprite had bluntly told him that if he spent one more minute 

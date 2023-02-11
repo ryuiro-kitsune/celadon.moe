@@ -1,5 +1,6 @@
 ---
 title: Default Title
+permalink: "/stories/{{ title | slugify }}/"
 ---
 <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -30,20 +31,21 @@ title: Default Title
   </style>
   <body style="background-color:#002b36">
 
-    <ul class="menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/homestuck/">Homestuck</a></li>
-      <li><a href="/fanfiction/">Stories</a></li>
-    </ul>
+    {% include "menu.html" %}
     
     <div style="padding-bottom: 300px">
       <article>
 	<div class="storybox">
 	  <h1>{{ title }}</h1>
 	  <h2>{{ subtitle }}</h2>
-	<br />
+	  <br />
 	  {{ content | safe }}
-	  </div>
+	</div>
+	<br />
+	<div>
+	  <h3>Author Note:</h3>
+	  {{ authornote }}
+	</div>
       </article>
 
     </div>

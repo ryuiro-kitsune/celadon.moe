@@ -1,0 +1,5 @@
+| Character    | Year | Classes                         |
+|--------------+------+---------------------------------|
+| Dave Strider | 1st  | History of Photography, Biology |
+| John Egbert  | 1st  | Music Theory                    |
+| Dirk Strider | 4th  |                                 |

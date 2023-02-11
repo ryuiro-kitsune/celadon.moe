@@ -22,9 +22,17 @@
     color: #48C925;
 }
 
+.dirk {
+    color: #F2A400;
+}
+
 .storybox {
     background-color: #e8d8c3;
     color: #000000;
     border-radius: 30px;
     padding: 1em 3em 20px;
+}
+
+.chat {
+    font-family: monospace;
 }
