@@ -2,7 +2,7 @@
 title: Beatdown, Round Zero
 subtitle:
 permalink: "/stories/college-stuck/{{ title | slugify }}/"
-authornote: Am I procrasinating on my actual projects? Maybe.
+authornote: Am I procrastinating on my actual projects? Maybe.
 tags: 
   - story
   - fanfic
@@ -20,7 +20,7 @@ He stared at his laptop, then his phone, then back to his laptop. He repeated th
 
 <span class="dave">"John,"</span> he shouted as he pulled his jacket on, <span class="dave">"I'm gonna be back in a few hours!"</span>
 
-John looked up from the preperations he was doing for *his* mid-term of the week, music theory.
+John looked up from the preparations he was doing for *his* mid-term of the week, music theory.
 
 <span class="john">"Uh, okay. Say hi to whoever you're meeting for me."</span>
 
@@ -50,7 +50,7 @@ He got to the third floor and walked over to the ladder that led to the rooftop.
 
 <span class="dirk">"Wassup Dave."</span>
 
-Dirk was waiting for him. He wore his dumb shades and hat even in twilight, engrossed in some elabrote bit only he was aware of. The requested dual bokken rested on his shoulders like baseball bats.
+Dirk was waiting for him. He wore his dumb shades and hat even in twilight, engrossed in some elaborate bit only he was aware of. The requested dual bokken rested on his shoulders like baseball bats.
 
 <span class="dave">"Dude why the hell are you still wearing the shades. It's eight fucking thirty.</span>
 
@@ -60,7 +60,7 @@ Dave snorted and rolled his eyes.
 
 <span class="dirk">"Laugh all you want, little bro, you know I'm right. Besides, I seem to recalled a certain someone doing the same thing."</span>
 
-<span class="dave">"Yeah, beacause I was 14 and inexplicably thought you were cool. We doing this?"</span>
+<span class="dave">"Yeah, because I was 14 and inexplicably thought you were cool. We doing this?"</span>
 
 <span class="dirk">"Fuck yeah we are,"</span> he said as he swung the bokken in his right hand and arced it in the direction of Dave's hand.
 
@@ -72,7 +72,7 @@ From an outside perspective, the two were locked in a deadly dance. However each
 
 They had a decade and a half of ill-advised practice. They knew where and how to strike to sting not break, to smack not crack, to make a loud and impression noise with the other's sword and not with the other's mouth as they cried out in pain.
 
-The fact that it looked as deadly as it did was a testiment to there bond.
+The fact that it looked as deadly as it did was a testament to there bond.
 
 However it was an illusion that was shattered the moment one of them opened their mouth.
 
@@ -84,15 +84,15 @@ Dave was silent for a few moments, the air only being filled with the cracking s
 
 <span class="dirk">"Dude you're a first-year. No one expects you be magically awesome at time-management and studying."</span>
 
-Dave contemplativly stabbed Dirk's hat off, which Dirk managed to arrange so it landed back on his head.
+Dave contemplatively stabbed Dirk's hat off, which Dirk managed to arrange so it landed back on his head.
 
 <span class="dave">"I know&mdash; Maybe it's not that I'm frustrated that I can't study now, its that I used to be so much better at it in high school."</span>
 
-Dirk batted Daves sword away and said, <span class="dirk">"That's fair. But I'd ask myself if the two settings are really simular enough to warrent the comparison. The only commonality is you and me."</span>
+Dirk batted Dave's sword away and said, <span class="dirk">"That's fair. But I'd ask myself if the two settings are really similar enough to warrant the comparison. The only commonality is you and me."</span>
 
 <span class="dave">"But&mdash;"</span>
 
-<span class="dirk">"It's true, Dave. The setting is completly different. We have to organize our own time now, as opposed to back in high school where our parents and teachers told us what to do and when. You gotta let go an accept that now that so much more is under your control than you're used to your productivity is gonna tank for a bit."</span>
+<span class="dirk">"It's true, Dave. The setting is completely different. We have to organize our own time now, as opposed to back in high school where our parents and teachers told us what to do and when. You gotta let go an accept that now that so much more is under your control than you're used to your productivity is gonna tank for a bit."</span>
 
 Dave connected with Dirk's hilt and the bokken clattered to the floor in defeat.
 
@@ -102,7 +102,7 @@ Dirk laughed as he picked up his sword, <span class="dirk">"Naw, it was a plea f
 
 Dave smiled at that, <span class="dave">"well I'm still hella uncertain, so I seem to have claimed victory there. But thanks Dirk. I think I get what you're saying."</span>
 
-Dirk crossed over to Dave and put a hand on his shoulder, <span class="dirk">"I'm glad. It took me until halfway through my sophmore year to realize that expecting myself to be raring to go at all times was unrealistic, and I'm proud that I can help make that realization come a bit faster."</span>
+Dirk crossed over to Dave and put a hand on his shoulder, <span class="dirk">"I'm glad. It took me until halfway through my sophomore year to realize that expecting myself to be raring to go at all times was unrealistic, and I'm proud that I can help make that realization come a bit faster."</span>
 
 <span class="dirk">"Now,"</span> Dirk ruffled Dave's hair, <span class="dirk">"want your bro to give you a little midterm tutoring?"</span>
 
