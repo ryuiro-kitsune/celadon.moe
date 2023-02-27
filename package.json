@@ -2,28 +2,15 @@
   "name": "celadon.moe",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
-    "test": "npx @11ty/eleventy --serve",
-    "build": "eleventy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryuiro-kitsune/celadon.moe.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ryuiro-kitsune/celadon.moe/issues"
-  },
-  "homepage": "https://github.com/ryuiro-kitsune/celadon.moe#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "markdown-it": "^13.0.1",
-    "markdown-it-attrs": "^4.1.4"
-  },
-  "dependencies": {
-    "markdown-it-footnote": "^3.0.3"
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0"
   }
 }

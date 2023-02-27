@@ -7,8 +7,8 @@ module.exports = function(eleventyConfig) {
     
     // Markdown experiement
     
-    let markdownIt = require("markdown-it");
-    let markdownItFootnote = require("markdown-it-footnote");
+//    let markdownIt = require("markdown-it");
+
     
     let options = {
 	html: true, // Enable HTML tags in source
@@ -17,10 +17,10 @@ module.exports = function(eleventyConfig) {
     };
     
     // configure the library with options
-    let markdownLib =  markdownIt(options).use(markdownItFootnote);
+ //   let markdownLib =  markdownIt(options).use(markdownItFootnote);
     
     // set the library to process markdown files
-    eleventyConfig.setLibrary("md", markdownLib);
+  //  eleventyConfig.setLibrary("md", markdownLib);
     
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("source/css/");
