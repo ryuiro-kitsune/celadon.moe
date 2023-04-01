@@ -42,6 +42,10 @@ article {
     }
 }
 
+article a {
+    color: black;
+}
+
 footer {
     margin-top: 16rem;
 }

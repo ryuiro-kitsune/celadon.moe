@@ -114,4 +114,5 @@ It was a day later and John was looking for Vriska. He hadn't seen her since the
 
 He didn't think Vriska would be the type to self destruct after going through hardship, however there was so much he didn't know. He didn't know about how Trolls worked, he didn't know the details of what had happened to her, and he didn't know her all that well in general. He had spent one day getting to know her and had no idea whether her quiet absence from the group was utterly mundane, or dangerously abnormal.
 
-Davesprite had bluntly told him that if he spent one more minute pacing trying to figure it out, he was going to have Jade lock him on LoHaC until he 
+Davesprite had bluntly told him that if he spent one more minute pacing trying to figure it out, he was going to have Jade lock him on LoHaC until he made up his mind. The threat of having to make a descision while battling perpetual godtier sustained cycle of death and rebirth via lava burns was enough to get him to go after her.
+
