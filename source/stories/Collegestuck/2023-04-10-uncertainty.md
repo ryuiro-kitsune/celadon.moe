@@ -1,6 +1,6 @@
 ---
-title: Uncertainty
-subtitle: Collegestuck—Moving in Together 1
+title: Uncertainty 
+subtitle: Collegestuck—Moving in Together 2
 permalink: "/stories/collegestuck/{{ title | slugify }}/"
 authornote: <p>Day two of this serial flash fiction experiment.<p>I'm enjoying the process so far, but I'm not sure how sustainable it is for me personally.</p><p>I'm planning on updating the home page for this series to look a bit nicer tommorow after I finish wednesday's entry.</p><p>Ta-ta for now gang!</p>
 tags:
