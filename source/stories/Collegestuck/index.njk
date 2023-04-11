@@ -2,10 +2,12 @@
 title: Collegestuck
 tags:
   - storyIndex
+layout: index.njk
+permalink: /stories/collegestuck/home/
 ---
 <ul style="list-style-type: none">
   {%- for post in collections.collegestuck-%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.subtitle }}</a></li>
   {%- endfor -%}
 </ul>
 
