@@ -3,7 +3,9 @@ title: Default Title
 subtitle:
 permalink: "/stories/{{ title | slugify }}/"
 authornote:
-tags: 
+tags:
+previous: home
+next: home
 ---
 <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -42,6 +44,14 @@ tags:
 	  <h2>{{ subtitle | safe }}</h2>
 	  <br />
 	  {{ content | safe }}
+	  <br />
+	  <nav>
+	    <ul>
+	      <li><a href="/stories/collegestuck/{{ previous | slugify }}">Previous Entry</a></li>
+	      <li><a href="/stories/collegestuck/home/">Home</a></li>
+	      <li><a href="/stories/collegestuck/{{ next | slugify }}">Next Entry</a></li>
+	    </ul>
+	  </nav>
 	</div>
 	<br />
 	<div>
