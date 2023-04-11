@@ -1,11 +1,12 @@
 ---
 title: Default Title
 subtitle:
-permalink: "/stories/{{ title | slugify }}/"
+permalink: "/stories/{{ series }}/{{ title | slugify }}/"
 authornote:
 tags:
 previous: home
 next: home
+series: collegestuck
 ---
 <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -47,9 +48,9 @@ next: home
 	  <br />
 	  <nav>
 	    <ul>
-	      <li><a href="/stories/collegestuck/{{ previous | slugify }}">Previous Entry</a></li>
-	      <li><a href="/stories/collegestuck/home/">Home</a></li>
-	      <li><a href="/stories/collegestuck/{{ next | slugify }}">Next Entry</a></li>
+	      <li><a href="/stories/{{ series }}/{{ previous | slugify }}">Previous Entry</a></li>
+	      <li><a href="/stories/{{ series }}/home/">Home</a></li>
+	      <li><a href="/stories/{{ series }}/{{ next | slugify }}">Next Entry</a></li>
 	    </ul>
 	  </nav>
 	</div>
