@@ -2,7 +2,7 @@
 title: Machinations
 subtitle: Collegestuck—Moving in Together 3
 tags: collegestuck
-authornote: <p>I'm planning on uploading twice tommorow for 4/13. This is a break in my upload schedule but, hear me out, iss 4/13.</p>
+authornote: <p>I'm planning on uploading twice tommorow for 4/13. This is a break in my upload schedule but, hear me out, its 4/13 and I need to do <em>something</em>.</p><p>Alternatively, I'll upload a longer short.</p><p>Whatever I do, I'll see y'all tmmrw. :)</p>
 layout: story.njk
 previous: Uncertainty
 next:
