@@ -42,9 +42,9 @@ article {
     }
 }
 
-/* article a { */
-/*     color: black; */
-/* } */
+article nav a {
+    color: black;
+}
 
 footer {
     margin-top: 16rem;
