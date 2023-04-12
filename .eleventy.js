@@ -1,13 +1,22 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const dayjs = require("dayjs")
 
 module.exports = function(eleventyConfig) {
-        //Rss
-      eleventyConfig.addPlugin(pluginRss);
+    /** Formats a date using dayjs's conventions.
+     * Docs: https://day.js.org/docs/en/display/format
+     */
+    const formatDate = (date) => dayjs(date).format('YYYY/M/D');
+    const slugDate = (date) => dayjs(date).format('YYYY-MM-DD');
+    eleventyConfig.addFilter('formatDate', formatDate);
+    eleventyConfig.addFilter('slugDate', slugDate);
+    
+    //Rss
+    eleventyConfig.addPlugin(pluginRss);
 
     
     // Markdown experiement
     
-//    let markdownIt = require("markdown-it");
+    //    let markdownIt = require("markdown-it");
 
     
     let options = {
@@ -17,10 +26,10 @@ module.exports = function(eleventyConfig) {
     };
     
     // configure the library with options
- //   let markdownLib =  markdownIt(options).use(markdownItFootnote);
+    //   let markdownLib =  markdownIt(options).use(markdownItFootnote);
     
     // set the library to process markdown files
-  //  eleventyConfig.setLibrary("md", markdownLib);
+    //  eleventyConfig.setLibrary("md", markdownLib);
     
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("source/css/");
