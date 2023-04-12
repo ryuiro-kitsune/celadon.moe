@@ -7,7 +7,7 @@ tags:
   - collegestuck
 layout: story.njk
 previous: Off to college
-next:
+next: Machinations
 ---
 The car ride was quiet. Dirk had the wheel of his dingy Honda Civic and had the aux, causing the only sound to be the faint pop music coming from the speakers.
 
