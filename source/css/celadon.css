@@ -52,3 +52,8 @@ footer {
 footer a {
     padding-right: .5em;
 }
+
+ /* Microformat auto markup */
+.p-summery {
+    font-size: .7em;
+}

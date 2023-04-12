@@ -1,0 +1,26 @@
+---
+permalink: "/blog/{{ date | slugDate }}-{{ title | slugify }}/"
+tags: blog
+---
+<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/celadon.css" rel="stylesheet">
+    <link rel="icon" href="/images/logo.svg">
+    <title>Sketches in Ascii: {{ title }}</title>
+  </head>
+{% include "menu.html" %}
+  
+  <article class="h-entry">
+    <h1 class="p-name">{{ title  }}</h1>
+    <p class="p-summery">{{ summery }}</p>
+      <div class="e-content">
+	{{ content | safe }}
+      </div>
+    <p>Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | slugDate}}">{{date | formatDate }}</time></p>
+  </article>
+  {% include "footer.html" %}
+</html>
