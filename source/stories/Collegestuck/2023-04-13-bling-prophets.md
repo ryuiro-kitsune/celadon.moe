@@ -54,3 +54,15 @@ Terezi's smiling face broke Vriska, "H-how, what the hell..."
 Terezi grinned, "Oh? Whatcha gonna do? Prove me wrong? Prove I don't play all my games this way? Howdju expect to do that, Vrissy?"
 
 Vriska stared at her for a few minutes and left the dorm, disturbed and afraid.
+
+### Do It Yourself
+
+The sewing machine thrumming with rhythmic simplicity was the only sound in the library.
+
+As soon as she finished the stich she was working on, Terezi swiftly double tapped the watch on her wrist, causing it vibrate the time in morse code. 23:30.
+
+She frowned, she was up later than she had planned and she only was halfway done with Cherrytongue's body.
+
+She sighed and shut off the sewing machine, the library was closing in a half hour and she'd rather stop at this natural break rather than be forced to abandon her work later.
+
+She could finish tommorow anyways.
