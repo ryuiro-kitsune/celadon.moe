@@ -1,6 +1,6 @@
 ---
 title: Detour to Wendy's
-subtitle: Collegestuck—Moving in Together 3
+subtitle: Collegestuck—Moving in Together 4
 tags: ['collegestuck', 'dave', 'dirk', 'rose']
 previous: Terezi's Wierdness is a Universal Constant
 next:
