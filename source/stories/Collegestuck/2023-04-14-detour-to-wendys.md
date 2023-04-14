@@ -9,7 +9,7 @@ authornote: <p>Blegh, I got absolutly no sleep last night.</p><p>Have a story.</
 ---
 
 Dave's phone vibrated in his pocket about 40 miles outside the city limits. He took it out and replied to Rose.
-
+<div class="chat">
 <span class="rose">TT: how close are you to your school</span><br />
 <span class="dave">TG: about 40 or so miles out</span><br />
 <span class="dave">TG: why?</span><br />
@@ -35,6 +35,7 @@ Dave's phone vibrated in his pocket about 40 miles outside the city limits. He t
 <span class="rose">TT: i'll see you soon, my dear strider</span><br />
 <span class="dave">TG: yeah ttyl</span><br />
 <span class="dave">TG: gl with your family and shit</span><br />
+</div>
 
 Dave sighed and put his phone to sleep.
 
@@ -70,7 +71,10 @@ Dirk chuckled, "There's one a block from the school, so whenever I'd miss dinner
 
 Dave felt another buzz and quickly replied to the final Rose text of the day.
 
+<div class="chat">
 <span class="rose">TT: i need your dorm address</span><br />
 <span class="rose">TT: so i can send you mail</span><br />
-<span class="dave">TG: greene 304
+<span class="dave">TG: yeah sure, whatever</span><br />
+<span class="dave">TG: greene 304</span>
+</div>
 
