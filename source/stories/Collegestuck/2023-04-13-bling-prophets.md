@@ -3,7 +3,7 @@ title: Terezi's Wierdness is a Universal Constant
 subtitle: A Collegestuck Collection
 tags: ['collegestuck', 'terezi', 'vriska']
 previous: Machinations
-next: 
+next: Detour to Wendy's
 layout: story.njk
 authornote: <p>Woooo! 4/13!</p><p>Have a Terezi and Vriska double feature.</p><p>Regularly scheduled uploads resume tommorow with John flying to Iowa.</p><p>See ya!</p>
 ---
