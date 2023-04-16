@@ -1,7 +1,8 @@
 ---
 title: Default Title
 permalink: "/articles/{{ title | slugify }}/"
-tags: feed
+tags: ["feed", "article"]
+date: git Created
 ---
 <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -16,22 +17,14 @@ tags: feed
   <body>
 
     {% include "menu.html" %}
-    
+
     <div>
       <article>
 	<h1>{{ title }}</h1>
 	<br />
 	{{ content | safe }}
       </article>
-    </div>
 
-    <!--<div class="card">
-
-	<img src="/images/logo.png" width="256rem" style="padding-left: 5rem;" />
-
-	<p style="font-size: 2em; max-width: 16em;"><span style="color: #268bd2">Celadon Camellia</span> is a person who lives in the internet and for some reason has dedicated an entire website to his bullshit. <br />Enjoy! ;)</p>
-
-    </div>-->
 {% include "footer.html" %}
   </body>
 </html>

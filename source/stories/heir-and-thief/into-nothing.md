@@ -1,7 +1,7 @@
 ---
 title: Return to Nothing
 subtitle: Chapter three of "The Heir and The Thief"
-tags: vriska
+tags: HaT
 layout: HaT.njk
 previous: Shes-Back
 next:

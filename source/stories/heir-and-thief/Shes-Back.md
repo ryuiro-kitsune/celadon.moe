@@ -2,7 +2,7 @@
 title: She's Back! Now What?
 subtitle: Chapter two of "The Heir and The Thief"
 tags: 
-  - vriska
+  - HaT
 layout: HaT.njk
 previous: retcon
 next: 
