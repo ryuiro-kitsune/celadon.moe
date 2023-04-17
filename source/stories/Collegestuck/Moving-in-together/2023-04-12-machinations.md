@@ -6,6 +6,7 @@ authornote: <p>I'm planning on uploading twice tommorow for 4/13. This is a brea
 layout: story.njk
 previous: Uncertainty
 next: Terezi's Wierdness is a Universal Constant
+date: 2023-04-12
 ---
 Rose wasn't sleeping, not that she ever slept really. A more accurate statement would be that she merely passed out every 18 odd hours.
 

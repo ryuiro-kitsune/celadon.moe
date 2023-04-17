@@ -1,12 +1,15 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs")
+var utc = require('dayjs/plugin/utc')
+
 
 module.exports = function(eleventyConfig) {
     /** Formats a date using dayjs's conventions.
      * Docs: https://day.js.org/docs/en/display/format
      */
-    const formatDate = (date) => dayjs(date).format('YYYY/M/D');
-    const slugDate = (date) => dayjs(date).format('YYYY-MM-DD');
+    dayjs.extend(utc)
+    const formatDate = (date) => dayjs(date).utc().format('YYYY/M/D');
+    const slugDate = (date) => dayjs(date).utc().format('YYYY-MM-DD');
     eleventyConfig.addFilter('formatDate', formatDate);
     eleventyConfig.addFilter('slugDate', slugDate);
     

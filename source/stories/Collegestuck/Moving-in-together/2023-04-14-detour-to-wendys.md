@@ -6,6 +6,7 @@ previous: Terezi's Wierdness is a Universal Constant
 next: Meeting the Roomate
 layout: story.njk
 authornote: <p>Blegh, I got absolutly no sleep last night.</p><p>Have a story.</p>
+date: 2023-04-14
 ---
 
 Dave's phone vibrated in his pocket about 40 miles outside the city limits. He took it out and replied to Rose.
