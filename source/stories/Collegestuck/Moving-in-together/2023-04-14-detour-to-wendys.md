@@ -3,7 +3,7 @@ title: Detour to Wendy's
 subtitle: Collegestuck—Moving in Together 4
 tags: ['collegestuck', 'dave', 'dirk', 'rose']
 previous: Terezi's Wierdness is a Universal Constant
-next:
+next: Meeting the Roomate
 layout: story.njk
 authornote: <p>Blegh, I got absolutly no sleep last night.</p><p>Have a story.</p>
 ---
