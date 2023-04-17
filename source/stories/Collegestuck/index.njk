@@ -7,6 +7,6 @@ permalink: /stories/collegestuck/home/
 ---
 <ul style="list-style-type: none">
   {%- for post in collections.collegestuck-%}
-  <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.subtitle }}: {{ page.date | formatDate }}</a></li>
+  <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.subtitle }}: {{ post.data.date | formatDate }}</a></li>
   {%- endfor -%}
 </ul>
