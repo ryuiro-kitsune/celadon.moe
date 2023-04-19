@@ -6,7 +6,7 @@ tags:
 layout: HaT.njk
 previous: retcon
 next: 
-date: 2023-02-03
+date: 2023-04-13
 author-note: Sorry this took longer than it was supposed to, I've been going through it in Socialology recently and its sapped my motivation to actually work on anything I care about. Next chapter will be up soon if I can help it. :)
 ---
 The Heir and the Thief coalesce back into physical forms from the breeze that carried them. The Thief remains in her prone position from before, with the Heir holding her head up.

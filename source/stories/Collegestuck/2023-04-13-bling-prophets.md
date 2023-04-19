@@ -1,6 +1,6 @@
 ---
 title: Terezi's Wierdness is a Universal Constant
-subtitle: A Collegestuck Collection
+series: Collegestuck
 tags: ['collegestuck', 'terezi', 'vriska']
 previous: Machinations
 next: Detour to Wendy's

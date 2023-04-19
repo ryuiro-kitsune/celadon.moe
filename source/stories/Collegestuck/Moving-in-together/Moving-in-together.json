@@ -1,1 +1,6 @@
-{"tags":["MiT"]}
+{
+    "tags":["MiT"],
+    "layout":"story.njk",
+    "series":"Collegestuck",
+    "subseries":"Moving in Together"
+}

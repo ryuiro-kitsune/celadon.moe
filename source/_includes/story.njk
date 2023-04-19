@@ -1,7 +1,7 @@
 ---
 title: Default Title
 subtitle:
-permalink: "/stories/{{ series }}/{{ title | slugify }}/"
+permalink: "/stories/{{ series | slugify }}/{{ title | slugify }}/"
 authornote:
 tags: feed
 previous: home
@@ -42,15 +42,23 @@ date: git Created
       <article>
 	<div class="storybox">
 	  <h1>{{ title | safe}}</h1>
-	  <h2>{{ subtitle | safe }}</h2>
+	  <h2>
+	    {% if subtitle %}
+	    {{ subtitle }}
+	    {% elif series and not subseries %}
+	    A {{ series }} story.
+	    {% elif number and series and subseries %}
+	    {{ series }}&mdash;{{ subseries }}: {{ number }}
+	    {% endif %}
+	  </h2>
 	  <br />
 	  {{ content | safe }}
 	  <br />
 	  <nav>
 	    <ul>
-	      <li><a href="/stories/{{ series }}/{{ previous | slugify }}">Previous Entry</a></li>
-	      <li><a href="/stories/{{ series }}/home/">Home</a></li>
-	      <li><a href="/stories/{{ series }}/{{ next | slugify }}">Next Entry</a></li>
+	      <li><a href="/stories/{{ series | slugify }}/{{ previous | slugify }}">Previous Entry</a></li>
+	      <li><a href="/stories/{{ series | slugify }}/home/">Home</a></li>
+	      <li><a href="/stories/{{ series | slugify }}/{{ next | slugify }}">Next Entry</a></li>
 	    </ul>
 	  </nav>
 	</div>
