@@ -1,10 +1,10 @@
 ---
-title: What's up with John right now? 
+title: What's up with John right now?
 number: 6
 authornote: <p>I would like to thank <a href="https://en.wikipedia.org/wiki/Spokane_International_Airport">Wikipedia</a> for its help writing today's story.</p><p>Its been a while since we've seen John, hasn't it. I wonder how many airport focused shorts I can milk out of him to exemplify what going to school in the midwest when you live on the west coast is like.</p><p>Also. Hi Jade.</p>
 previous: Meeting the Roommate
 tags: ['collegestuck']
-next:
+next: Terezi plays chess
 date: 2023-04-19
 layout: story.njk
 ---
