@@ -12,6 +12,14 @@ tags: [ 'blog', 'feed' ]
     <link rel="icon" href="/images/logo.svg">
     <title>Sketches in Ascii: {{ title }}</title>
   </head>
+  <style>
+    article img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+    }
+  </style>
 {% include "menu.html" %}
   
   <article class="h-entry">
@@ -20,6 +28,7 @@ tags: [ 'blog', 'feed' ]
       <div class="e-content">
 	{{ content | safe }}
       </div>
+      <hr>
     <p>Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | slugDate}}">{{date | formatDate }}</time></p>
   </article>
   {% include "footer.html" %}
