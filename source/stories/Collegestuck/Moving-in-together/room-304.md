@@ -3,6 +3,7 @@ title: Room 304
 date: 2023-05-01
 authornote: <p>I'm back!</p><p>Sorry for the micro hiatus, finals plus getting sick kinda floored me for a little.</p><p>We're back to our regularly scheduled programming now though! :)</p>
 number: 8
+tags: collegestuck
 previous: Terezi plays chess
 layout: story.njk
 ---
