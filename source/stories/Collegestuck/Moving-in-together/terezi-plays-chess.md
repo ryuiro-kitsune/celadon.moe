@@ -3,7 +3,7 @@ title: Terezi plays chess
 authornote: <p>Terezi Gaming.</p><p>Bit of a lighter update today, I ended up taking three tests today and it sapped my motivation to write.</p><p>See y'all monday.</p>
 number: 7
 previous: What's up with John right now?
-next:
+next: Room 304
 tags: ['collegestuck']
 date: 2023-04-21
 layout: story.njk
