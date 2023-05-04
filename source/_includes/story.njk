@@ -39,9 +39,9 @@ date: git Created
     {% include "menu.html" %}
     
     <div style="padding-bottom: 300px">
-      <article>
+      <article class="h-entry">
 	<div class="storybox">
-	  <h1>{{ title | safe}}</h1>
+	  <h1 class="p-name">{{ title | safe}}</h1>
 	  <h2>
 	    {% if subtitle %}
 	    {{ subtitle }}
@@ -52,32 +52,35 @@ date: git Created
 	    {% endif %}
 	  </h2>
 	  <br />
-	  {{ content | safe }}
+	  <div id="{{ title | slugify }}" class="e-content">
+	    {{ content | safe }}
+	    <br />
+	    <nav>
+	      <ul>
+		<li><a href="/stories/{{ series | slugify }}/{{ previous | slugify }}">Previous Entry</a></li>
+		<li><a href="/stories/{{ series | slugify }}/home/">Home</a></li>
+		<li><a href="/stories/{{ series | slugify }}/{{ next | slugify }}">Next Entry</a></li>
+	      </ul>
+	    </nav>
+	  </div>
 	  <br />
-	  <nav>
-	    <ul>
-	      <li><a href="/stories/{{ series | slugify }}/{{ previous | slugify }}">Previous Entry</a></li>
-	      <li><a href="/stories/{{ series | slugify }}/home/">Home</a></li>
-	      <li><a href="/stories/{{ series | slugify }}/{{ next | slugify }}">Next Entry</a></li>
-	    </ul>
-	  </nav>
-	</div>
-	<br />
-	<div>
-	  <h3>Author Note:</h3>
-	  {{ authornote | safe }}
-	</div>
+	  </div>
+	  <div>
+	    <h3>Author Note:</h3>
+	    {{ authornote | safe }}
+	  </div>
+	  <p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | slugDate}}">{{date | formatDate }}</time></p>
       </article>
 
-    </div>
+      </div>
 
-    <!--<div class="card">
+      <!--<div class="card">
 
-	<img src="/images/logo.png" width="256rem" style="padding-left: 5rem;" />
+	  <img src="/images/logo.png" width="256rem" style="padding-left: 5rem;" />
 
-	<p style="font-size: 2em; max-width: 16em;"><span style="color: #268bd2">Celadon Camellia</span> is a person who lives in the internet and for some reason has dedicated an entire website to his bullshit. <br />Enjoy! ;)</p>
+	  <p style="font-size: 2em; max-width: 16em;"><span style="color: #268bd2">Celadon Camellia</span> is a person who lives in the internet and for some reason has dedicated an entire website to his bullshit. <br />Enjoy! ;)</p>
 
-    </div>-->
-  {% include "footer.html" %}
+      </div>-->
+      {% include "footer.html" %}
   </body>
 </html>

@@ -5,7 +5,7 @@ authornote: <p>I'm back!</p><p>Sorry for the micro hiatus, finals plus getting s
 number: 8
 tags: collegestuck
 previous: Terezi plays chess
-layout: story.njk
+next: The First Day of the Rest of Our Lives.
 ---
 Dave unlocked the door of his dorm room and moved his bags into the room.
 
