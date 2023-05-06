@@ -1,0 +1,7 @@
+{
+    "layout": "story.njk",
+    "tags": ["collegestuck-bonus"],
+    "permalink": "/stories/{{ series | slugify }}/bonus/{{ title | slugify }}/",
+    "next": "home",
+    "previous": "home"
+}

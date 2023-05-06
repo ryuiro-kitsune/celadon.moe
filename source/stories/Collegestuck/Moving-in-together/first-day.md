@@ -5,6 +5,7 @@ authornote: <p>Bit of a shorter one today. The main explanation is that I've bee
 number: 9
 tags: collegestuck
 previous: Room 304
+next: Rose
 ---
 
 John Egbert stood on the other side of the door holding a single suitcase.
