@@ -22,7 +22,7 @@ permalink: /stories/collegestuck/home/
 -->
 <h2>Extracanonical and Bonuses</h2>
 <ul style="list-style-type: none">
-  {%- for post in collections.collegestuck-bonus -%}
+  {%- for post in collections.collegestuck_bonus -%}
   <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.date | formatDate }}</a></li>
   {%- endfor -%}
 </ul>

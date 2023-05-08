@@ -1,5 +1,6 @@
 ---
 title: Height
+date: 2023-05-05
 ---
 A young man stands in the middle of a stage with a spotlight trained on him. His physical appearence is largely unimportant, but he is 5'9'' and wearing a sweater-vest.
 
