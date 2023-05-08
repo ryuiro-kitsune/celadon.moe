@@ -21,9 +21,9 @@ Well, unlike my poor avatar who only exist to lose an argument with Miss Lalonde
 
 The base of my "canon height estimate" is a series of pictures captured by my family at the Requim Cafe.
 
-<img src="/images/blog/size-1.png">
-<img src="/images/blog/size-2.png">
-<img src="/images/blog/size-3.png">
+<img src="/images/blog/size-1.jpg">
+<img src="/images/blog/size-2.jpg">
+<img src="/images/blog/size-3.jpg">
 
 Now, we can see that A, these heights have inches next to them, and B, the humans are quite smol.
 
