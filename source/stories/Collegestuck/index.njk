@@ -6,12 +6,12 @@ layout: index.njk
 permalink: /stories/collegestuck/home/
 ---
 <h2>Chronological Order</h2>
-<ul style="list-style-type: none">
+<ul style="list-style-type: none;margin-left:35%;text-align: left">
   {%- for post in collections.collegestuck-%}
   <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.date | formatDate }}</a></li>
   {%- endfor -%}
 </ul>
-<!--
+
 <h2>Arcs</h2>
 <h3>Moving in Together</h3>
 <ol style="margin-left:35%;text-align: left">
@@ -19,9 +19,9 @@ permalink: /stories/collegestuck/home/
   <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.date | formatDate }}</a></li>
   {%- endfor -%}
 </ol>
--->
+
 <h2>Extracanonical and Bonuses</h2>
-<ul style="list-style-type: none">
+<ul style="list-style-type: none;margin-left:35%;text-align: left">
   {%- for post in collections.collegestuck_bonus -%}
   <li><a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.date | formatDate }}</a></li>
   {%- endfor -%}
