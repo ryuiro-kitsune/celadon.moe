@@ -1,7 +1,7 @@
 ---
 title: Terezi's Wierdness is a Universal Constant
 series: Collegestuck
-tags: ['collegestuck', 'terezi', 'vriska']
+tags: ['collegestuck', 'terezi', 'vriska', CSShorts']
 previous: Machinations
 next: Detour to Wendy's
 layout: story.njk
