@@ -1,0 +1,57 @@
+---
+layout: index.njk
+---
+<nav>
+<ul>
+  <li><a href="#fandom">Fandom</a></li>
+  <li><a href="#identity">Identity</a></li>
+  <li><a href="#internet">Internet</a></li>
+  <li><a href="#meme">Meme</a></li>
+  <li><a href="#blob">Blob</a></li>
+</ul>
+</nav>
+
+<h1 id="fandom">Fandom</h1>
+{% for object in emoji %}
+{% if object.category == "Fandom" %}
+<h2>{{object.shortcode }}</h2>
+<img src="{{object.url}}" width="128px">
+<hr>
+{% endif %}
+{% endfor %}
+
+<h1 id="identity">Identity</h1>
+{% for object in emoji %}
+{% if object.category == "Identity" %}
+<h2>{{object.shortcode }}</h2>
+<img src="{{object.url}}" width="128px">
+<hr>
+{% endif %}
+{% endfor %}
+
+<h1 id="internet">Internet</h1>
+{% for object in emoji %}
+{% if object.category == "Internet" %}
+<h2>{{object.shortcode }}</h2>
+<img src="{{object.url}}" width="128px">
+<hr>
+{% endif %}
+{% endfor %}
+
+<h1 id="meme">Meme</h1>
+{% for object in emoji %}
+{% if object.category == "Meme" %}
+<h2>{{object.shortcode }}</h2>
+<img src="{{object.url}}" width="128px">
+<hr>
+{% endif %}
+{% endfor %}
+
+<h1 id="blob">Blob</h1>
+{% for object in emoji %}
+{% if object.category == "Blob" %}
+<h2>{{object.shortcode }}</h2>
+<img src="{{object.url}}" width="128px">
+<hr>
+{% endif %}
+{% endfor %}
