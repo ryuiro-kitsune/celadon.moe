@@ -69,7 +69,8 @@ date: git Created
 	    <h3>Author Note:</h3>
 	    {{ authornote | safe }}
 	  </div>
-	  <p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | slugDate}}">{{date | formatDate }}</time></p>
+	<p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | slugDate}}">{{date | formatDate }}</time></p>
+	<p style="font-size: .5em">Wordcount: {{ content | wordcount }}
       </article>
 
       </div>
