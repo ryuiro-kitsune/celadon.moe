@@ -1,0 +1,134 @@
+HemoSpectrum
+============
+Rust	#A10000
+Bronze	#A25203
+Gold	#A1A100
+Lime	#658200
+Olive	#416600
+Jade	#078446
+Teal	#008282
+Cobalt	#004182
+Indigo	#0021CB
+Purple	#631DB4
+Violet	#6A006A
+Fuchsia	#99004D
+
+Text Colors
+===========
+Karkat		#626262
+Jane Crocker	#00D5F2
+Jake English	#1F9400
+Dirk Strider	#F2A400
+Davsprite	#F2A400
+Roxy Lalonde	#FF6FF2
+JasperSprite	#F146EF
+John Egbert	#0715CD
+Jade Harley	#48C925
+Dave Strider	#E00707
+Rose Lalonde	#B536DA
+
+Troll Body Colors
+=================
+Body	#C4C4C4
+Horn-1	#FFBA29
+Horn-2	#FF9000
+Horn-3	#FF4200
+
+
+Aspect Colors
+======================
+Blood
+----------------------
+#290704		Hood
+#3D190A 	Shirt
+#FF0000 	Aspect
+#5C2913 	Pants
+#583980 	Shoes
+
+Breath
+----------------------
+#0052F2		Hood
+#0086EB 	Shirt
+#10E0FF 	Aspect
+#006EE9 	Pants
+#FFCC43 	Shoes
+
+Doom
+----------------------
+#1E211E		Hood
+#204020 	Shirt
+#000000 	Aspect
+#192C16 	Pants
+#D6BB78 	Shoes
+
+Heart
+----------------------
+#431024		Hood
+#6E0E2E 	Shirt
+#BD1864 	Aspect
+#55142A 	Pants
+#076E33 	Shoes
+
+Hope
+----------------------
+#FFC331		Hood
+#FFE094 	Shirt
+#FFFFFF 	Aspect
+#F6C54A 	Pants
+#587158 	Shoes
+
+Life
+----------------------
+#605542		Hood
+#CCC3B4 	Shirt
+#76C34E 	Aspect
+#A29989 	Pants
+#0F3479 	Shoes
+
+Light
+----------------------
+#FA4700		Hood
+#F98100 	Shirt
+#FFF547 	Aspect
+#E76700 	Pants
+#22A4FF 	Shoes
+
+Mind
+----------------------
+#386426		Hood
+#3DA35A 	Shirt
+#82DFCA 	Aspect
+#61B63D 	Pants
+#7C1D3D 	Shoes
+
+Rage
+----------------------
+#7E33AA		hood
+#442769 	Shirt
+#D048F2 	Aspect
+#281D36 	Pants
+#33130A 	Shoes
+
+Space
+----------------------
+#1E1E1E		Hood
+#010101 	Shirt
+#E5E5E5 	Aspect
+#222224 	Pants
+#F10602 	Shoes
+
+Time
+----------------------
+#510606		Hood
+#B70D0E		Shirt
+#FF2106		Aspect
+#8E1516		Pants
+#1E1E22		Shoes
+
+Void
+----------------------
+#1F4880		Hood
+#002366 	Shirt
+#030D22 	Aspect
+#126180 	Pants
+#6C655A 	Shoes

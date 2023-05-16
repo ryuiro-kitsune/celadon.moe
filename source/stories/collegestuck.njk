@@ -1,0 +1,94 @@
+---js
+{
+    pagination: {
+	data: "collegestuck",
+	size: 1,
+	alias: "story"
+    },
+    permalink: "/stories/collegestuck/{{ story.title | slugify}}/",
+    eleventyComputed: {
+	date(data) {
+	    const _date = new Date(data.story.date);
+	    // HACK: Inject the computed date into the internal `page` object. Eeww.
+	    data.page.date = _date;
+	    return _date;
+	}
+    }
+}
+---
+<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/celadon.css" rel="stylesheet">
+    <link href="/css/homestuck.css" rel="stylesheet">
+    <link rel="icon" href="/images/logo.svg">
+    <title>Sketches in Ascii: {{ title }}</title>
+  </head>
+  <style>
+    h1 {
+    color: #000;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    font-size: 2rem;
+    }
+    h2 {
+    color:#000;
+    font-size: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+    }
+  </style>
+  <body>
+
+    {% include "menu.html" %}
+
+    <div style="padding-bottom: 300px">
+      <article class="h-entry">
+	<div class="storybox">
+	  <h1 class="p-name">{{ story.title | safe}}</h1>
+	  <h2>
+	    {% if story.subtitle %}
+	    {{ story.subtitle }}
+	    {% elif series and not story.subseries %}
+	    A {{ series }} story.
+	    {% elif story.number and series and story.subseries %}
+	    {{ series }}&mdash;{{ story.subseries }}: {{ story.number }}
+	    {% endif %}
+	  </h2>
+	  <br />
+	  <div id="{{ title | slugify }}" class="e-content">
+	    {{ story.content | safe }}
+	    <br />
+	    <nav>
+	      <ul>
+		<li><a href="/stories/collegestuck/{{ story.previous | slugify }}">Previous Entry</a></li>
+		<li><a href="/stories/collegestuck/home/">Home</a></li>
+		<li><a href="/stories/collegestuck/{{ story.next | slugify }}">Next Entry</a></li>
+	      </ul>
+	    </nav>
+	  </div>
+	  <br />
+	</div>
+	<div>
+	  <h3>Author Note:</h3>
+	  {{ story.authornote | safe }}
+	</div>
+	<p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ page.date | slugDate }}">{{ page.date | formatDate }}</time></p>
+	<p style="font-size: .5em">Wordcount: {{ story.content | wordcount }}
+      </article>
+
+    </div>
+
+    <!--<div class="card">
+
+	<img src="/images/logo.png" width="256rem" style="padding-left: 5rem;" />
+
+	<p style="font-size: 2em; max-width: 16em;"><span style="color: #268bd2">Celadon Camellia</span> is a person who lives in the internet and for some reason has dedicated an entire website to his bullshit. <br />Enjoy! ;)</p>
+
+    </div>-->
+    {% include "footer.html" %}
+  </body>
+</html>
