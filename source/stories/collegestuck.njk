@@ -3,15 +3,22 @@
     pagination: {
 	data: "collegestuck",
 	size: 1,
-	alias: "story"
+	alias: "story",
+	addAllPagesToCollections: true
     },
-    permalink: "/stories/collegestuck/{{ story.title | slugify}}/",
+    permalink: "/stories/s/collegestuck/e/{{ story.title | slugify}}/",
+    tags: ["feed", "collegestuck"],
+    series: "Collegestuck",
     eleventyComputed: {
 	date(data) {
 	    const _date = new Date(data.story.date);
 	    // HACK: Inject the computed date into the internal `page` object. Eeww.
 	    data.page.date = _date;
 	    return _date;
+	},
+	title(data) {
+	    const _title = data.story.title;
+	    return _title;
 	}
     }
 }
@@ -25,7 +32,7 @@
     <link href="/css/celadon.css" rel="stylesheet">
     <link href="/css/homestuck.css" rel="stylesheet">
     <link rel="icon" href="/images/logo.svg">
-    <title>Sketches in Ascii: {{ title }}</title>
+    <title>Sketches in Ascii: {{ story.title }}</title>
   </head>
   <style>
     h1 {
@@ -43,7 +50,7 @@
   </style>
   <body>
 
-    {% include "menu.html" %}
+    {% include "menu.njk" %}
 
     <div style="padding-bottom: 300px">
       <article class="h-entry">
@@ -64,9 +71,9 @@
 	    <br />
 	    <nav>
 	      <ul>
-		<li><a href="/stories/collegestuck/{{ story.previous | slugify }}">Previous Entry</a></li>
-		<li><a href="/stories/collegestuck/home/">Home</a></li>
-		<li><a href="/stories/collegestuck/{{ story.next | slugify }}">Next Entry</a></li>
+		<li><a href="/stories/s/collegestuck/e/{{ story.previous | slugify }}">Previous Entry</a></li>
+		<li><a href="/stories/s/collegestuck/home/">Home</a></li>
+		<li><a href="/stories/s/collegestuck/e/{{ story.next | slugify }}">Next Entry</a></li>
 	      </ul>
 	    </nav>
 	  </div>
@@ -76,7 +83,7 @@
 	  <h3>Author Note:</h3>
 	  {{ story.authornote | safe }}
 	</div>
-	<p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ page.date | slugDate }}">{{ page.date | formatDate }}</time></p>
+    <p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ page.date | formatDate('YYYY-MM-DD') }}">{{ page.date | formatDate("YYYY/MM/DD H:mm z") }}</time></p>
 	<p style="font-size: .5em">Wordcount: {{ story.content | wordcount }}
       </article>
 
