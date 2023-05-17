@@ -6,7 +6,7 @@
 	alias: "entry",
 	addAllPagesToCollections: true
     },
-    permalink: "/b/e/{{ entry.date | truncateStrDate }}-{{ entry.title | slugify}}",
+    permalink: "/b/e/{{ entry.date | truncateStrDate }}-{{ entry.title | slugify}}/",
     tags: ["feed","blog"],
     eleventyComputed: {
 	date(data) {
