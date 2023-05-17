@@ -1,0 +1,35 @@
+---js
+{
+    css: "celadon",
+    pagination: {
+	data: "articles",
+	size: 1,
+	alias: "entry",
+	addAllPagesToCollections: true
+    },
+    permalink: "/a/e/{{ entry.title | slugify}}/",
+    tags: ["feed","articles"],
+    eleventyComputed: {
+	date(data) {
+	    const _date = new Date(data.entry.date);
+	    data.page.date = _date;
+	    return _date;
+	},
+	title(data) {
+	    const _title = data.entry.title;
+	    return _title;
+	},
+    }
+}
+---
+{% extends "base.html" %}
+{% block content %}
+
+<article class=h-entry>
+  <h2 hidden class="p-name">{{ entry.title }}</h2>
+  <div class="e-content">
+    {{ entry.content | safe }}
+  </div>
+<p>Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | formatDate('YYYY-MM-DD')}}">{{ date | formatDate('YYYY-M-DD H:MM z') }}</time></p>
+    </article>
+{% endblock %}
