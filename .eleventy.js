@@ -1,7 +1,8 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs");
 var utc = require('dayjs/plugin/utc');
-
+var advancedFormat = require('dayjs/plugin/advancedFormat');
+var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
 
 
 
@@ -10,15 +11,21 @@ module.exports = function(eleventyConfig) {
      * Docs: https://day.js.org/docs/en/display/format
      */
     dayjs.extend(utc);
-    const formatDate = (date) => dayjs(date).utc().format('YYYY/M/D');
-    const slugDate = (date) => dayjs(date).utc().format('YYYY-MM-DD');
-    eleventyConfig.addFilter('formatDate', formatDate);
-    eleventyConfig.addFilter('slugDate', slugDate);
+    dayjs.extend(advancedFormat);
+    dayjs.extend(timezone);
+    eleventyConfig.addFilter('formatDate', function(date, format) {
+	return dayjs(date).format(format);
+    });
 
     eleventyConfig.addFilter('unescape', function(str) {
 	let converted = str.replace(/\\u003c/g, '<').replace(/\\u003e/g, ">").replace(/\\u0026/g, "&");
 	return converted;
-});
+    });
+
+    eleventyConfig.addFilter('truncateStrDate', function(str) {
+	let truncated = str.slice(0, 10);
+	return truncated;
+    });
     
     //Rss
     eleventyConfig.addPlugin(pluginRss);
