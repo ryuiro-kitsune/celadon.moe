@@ -48,7 +48,7 @@
 
     <article class="h-entry">
       <h1 class="p-name">{{ entry.title }}</h1>
-      <div class="p-summery">{{ entry.summery }}</div>
+      <div class="p-summery">{{ entry.summery | safe}}</div>
       <div class="e-content">
 	{{ entry.content | safe }}
       </div>
