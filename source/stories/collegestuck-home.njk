@@ -1,0 +1,16 @@
+---
+title: "Sketches in Ascii: Collegestuck Home"
+css: celadon
+layout: index.njk
+permalink: '/stories/s/collegestuck/home/'
+---
+
+    <h2>Collegstuck Home<h2>
+	<h3>Chronological/Publishing Order</h3>
+	<ul style="list-style-type: none;margin-left:35%;text-align: left">
+	  {%- for post in collections.collegestuck-%}
+	  <li><a href="{{ post.url }}">{{ post.data.date | formatDate("M/DD") }} &mdash; {{ post.data.title }}</a></li>
+	  {%- endfor -%}
+	</ul>
+  </body>
+</html>
