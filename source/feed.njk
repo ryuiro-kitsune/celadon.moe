@@ -24,7 +24,6 @@
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
   </author>
   {%- for post in collections.feed | reverse %}
   {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
@@ -33,11 +32,6 @@
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <image>
-      <url>https://celadon.moe/images/rss.png</url>
-      <title>Logo of the site on a wallpaper backdrop</title>
-      <link>https://celadon.moe/</link>
-    </image>
     <content xml:lang="{{ metadata.language }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
