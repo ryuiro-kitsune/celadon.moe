@@ -26,6 +26,10 @@ module.exports = function(eleventyConfig) {
 	let truncated = str.slice(0, 10);
 	return truncated;
     });
+
+    eleventyConfig.addFilter('append', function(str1, str2) {
+	return str1.concat(str2);
+    });
     
     //Rss
     eleventyConfig.addPlugin(pluginRss);
