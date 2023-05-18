@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/{{ css }}.css">
 	<link rel="icon" href="/images/logo.svg">
-	<title>{{ title }}</title>
+	{% block title %}<title>{{ title }}</title>{% endblock %}
   </head>
+
+  <style>
+    {% block style %}
+    {% endblock %}
+  </style>
+  
   <body class="center">
 
     {% include "menu.njk" %}
-    
+
+    {% block heading %}
     <h1>{{ title }}</h1>
+    {% endblock %}
 
     {% block content %}{% endblock %}
 
