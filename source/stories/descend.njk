@@ -62,10 +62,6 @@
 	<li><a style="color: #FFF" href="/stories/s/descend/e/{{ story.next | slugify }}">Next Entry</a></li>
       </ul>
     </nav>
-    <div>
-      <h3>Author Note:</h3>
-      {{ story.authornote | safe }}
-    </div>
     <p style="font-size: .5em">Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ page.date | formatDate('YYYY-MM-DD') }}">{{ page.date | formatDate("YYYY/MM/DD H:mm z") }}</time></p>
     <p style="font-size: .5em">Wordcount: {{ story.content | wordcount }}
   </article>

@@ -25,36 +25,36 @@
     }
 }
 ---
-<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml">
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/celadon.css" rel="stylesheet">
-    <link rel="icon" href="/images/logo.svg">
-    <title>Sketches in Ascii Blog: {{ title }}</title>
-  </head>
-  <style>
-    article img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    }
-  </style>
-  <body>
-    {% include "menu.njk" %}
+<!-- <!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml"> -->
+<!-- <html> -->
+<!--   <head> -->
+<!--     <meta charset="UTF-8"> -->
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!--     <link href="/css/celadon.css" rel="stylesheet"> -->
+<!--     <link rel="icon" href="/images/logo.svg"> -->
+<!--     <title>Sketches in Ascii Blog: {{ title }}</title> -->
+<!--   </head> -->
+<!--   <style> -->
+<!--     article img { -->
+<!--     display: block; -->
+<!--     margin-left: auto; -->
+<!--     margin-right: auto; -->
+<!--     width: 50%; -->
+<!--     } -->
+<!--   </style> -->
+<!--   <body> -->
+<!--     {% include "menu.njk" %} -->
 
-    <article class="h-entry">
-      <h1 class="p-name">{{ entry.title }}</h1>
-      <div class="p-summery">{{ entry.summery | safe}}</div>
-      <div class="e-content">
-	{{ entry.content | safe }}
-      </div>
-      <hr>
-      <p>Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | formatDate('YYYY-MM-DD')}}">{{ date | formatDate('YYYY-M-DD H:MM z') }}</time></p>
-    </article>
-    {% include "footer.html" %}
-  </body>
-</html>
+<!--     <article class="h-entry"> -->
+<!--       <h1 class="p-name">{{ entry.title }}</h1> -->
+<!--       <div class="p-summery">{{ entry.summery | safe}}</div> -->
+<!--       <div class="e-content"> -->
+<!-- 	{{ entry.content | safe }} -->
+<!--       </div> -->
+<!--       <hr> -->
+<!--       <p>Published by <a class="p-author h-card" href="https://celadon.moe">Celadon Camellia</a> on <time class="dt-published" datetime="{{ date | formatDate('YYYY-MM-DD')}}">{{ date | formatDate('YYYY-M-DD H:MM z') }}</time></p> -->
+<!--     </article> -->
+<!--     {% include "footer.html" %} -->
+<!--   </body> -->
+<!-- </html> -->
