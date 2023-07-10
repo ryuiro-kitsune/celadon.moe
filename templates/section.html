@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 
+{% block header %}
+<link rel="stylesheet" href="/css/celadon-classic.css">
+{% endblock %}
+
 {% block content %}
 <h1 class="title">
   {{ section.title }}
 </h1>
+
+<br>
+
+{{ section.content | safe }}
+
 <ul>
   <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
   {% for page in section.pages %}

@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 
+{% block header %}
+<link rel="stylesheet" href="/css/celadon-classic.css">
+{% endblock header %}
+
 {% block content %}
-<header>                                                            
-  <h1><a href="/">Sketches in Ascii</a></h1>
-  <nav>
-    <ul>
-      <li><a href="/s">Story Index</a></li>
-      <li><a href="/b">Blog</a></li>
-    </ul>
-  </nav>
-</header>
+{{ section.content | safe }}
 {% endblock content %}
+
+{% block footer %}
+<footer>
+  <p>This site was built with <a href="https://www.getzola.org/">Zola</a>the Static Site Generator.</p>
+  <a href=http://cairovercoat.tumblr.com/tagged/pixel+pattern>background credit</a>
+  <p style="display: inline;">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA</a>license.</p>
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+</footer>
+
+{% endblock footer %}
