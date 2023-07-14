@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <title>Sketches in Ascii</title>
     <link rel="icon" href="/images/logo.svg">
-    {% block header %} {% endblock %}
+    <link rel="alternate" type="application/atom+xml" title="ATOM" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {% block header %}
+    <link rel="stylesheet" href="/css/celadon-classic.css">
+    {% endblock %}
   </head>
 
   <body>
@@ -25,6 +28,6 @@
       </div>
     </section>
 
-    {% block footer %} {% endblock %}
+    {% block footer %}{% include "footer.html" %}{% endblock %}
   </body>
 </html>
