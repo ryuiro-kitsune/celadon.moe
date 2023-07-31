@@ -3,9 +3,11 @@ title = "Detour to Wendy's"
 weight = 4
 authornote = "<p>Blegh, I got absolutly no sleep last night.</p><p>Have a story.</p>"
 date = 2023-04-14T12:00:00-05:00
+taxonomies.characters=["Dave Strider", "Rose Lalonde", "Dirk Strider"]
 +++
 
 Dave's phone vibrated in his pocket about 40 miles outside the city limits. He took it out and replied to Rose.
+<!-- more -->
 <div class="chat">
 <span class="rose">TT: how close are you to your school</span><br />
 <span class="dave">TG: about 40 or so miles out</span><br />

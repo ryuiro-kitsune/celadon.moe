@@ -20,11 +20,17 @@ feed_filename = "atom.xml"
 #       {name = "authors"}, # Basic definition: no feed or pagination
 #     ]
 #
-taxonomies = []
+taxonomies = [
+	{ name = "characters"},
+	{ name = "fandoms"},
+	{ name = "rating"},
+	{tags = "tags" }
+]
 
 render_emoji = true
 
 [slugify]
+paths_keep_dates = true
 
 
 [markdown]

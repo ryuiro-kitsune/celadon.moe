@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block header %}
-<link rel="stylesheet" href="/css/celadon-classic.css">
+<link rel="stylesheet" href="/css/celadon-neo.css">
 {% endblock %}
 
 {% block content %}
@@ -13,14 +13,21 @@
 
 {{ section.content | safe }}
 
-<ul>
+<section>
   <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <div class="card">
+    <h2>
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+   </h2>
+      <div>
+	{{ page.summary | safe }}
+      </div>
+  </div>
   {% endfor %}
   {% for name in section.subsections %}
   {% set subsection = get_section(path=name) %}
-  <li><a href="{{ subsection.permalink | safe }}">{{ subsection.title }}</a></li>
+  <li><a href="{{ subsection.permalink | safe }}">{{ subsection.title }}</a></div>
   {% endfor %}
-</ul>
+</section>
 {% endblock content %}

@@ -3,9 +3,10 @@ title = "The First Day of the Rest of Our Lives."
 date = "2023-05-03"
 authornote = "<p>Bit of a shorter one today. The main explanation is that I've been trapped in finals all week and am moving out tmmrw.</p><p>See you Friday!</p>"
 weight = 9
+taxonomies.characters=["John Egbert","Dave Strider"]
 +++
-
 John Egbert stood on the other side of the door holding a single suitcase.
+<!-- more -->
 
 Dave slowly unlatched the door and pulled it open towards himself. John had a massive smile on his face.
 

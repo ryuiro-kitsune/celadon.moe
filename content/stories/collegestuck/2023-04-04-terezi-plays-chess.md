@@ -2,8 +2,12 @@
 title= "Terezi plays chess"
 authornote= "<p>Terezi Gaming.</p><p>Bit of a lighter update today, I ended up taking three tests today and it sapped my motivation to write.</p><p>See y'all monday.</p>"
 weight = 7
+date = 2023-04-04
+[taxonomies]
+characters=["Dave Strider", "Terezi Pyrope"]
 +++
 At the tender hour of 3:30 AM, Terezi had her laptop and an internet chess program.
+<!-- more -->
 
 <div class="chat">
 --- turntechGodhead has joined the room ---<br />

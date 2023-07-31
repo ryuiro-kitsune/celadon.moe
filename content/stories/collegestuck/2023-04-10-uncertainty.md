@@ -1,8 +1,11 @@
 +++
 title = "Uncertainty"
 weight = 2
+[taxonomies]
+characters=["Dave Strider", "Dirk Strider"]
 +++
 The car ride was quiet. Dirk had the wheel of his dingy Honda Civic and had the aux, causing the only sound to be the faint pop music coming from the speakers.
+<!-- more -->
 
 "So bro, you ready for your new life of freedom?"
 

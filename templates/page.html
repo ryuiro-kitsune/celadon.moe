@@ -1,26 +1,21 @@
 {% extends "base.html" %}
 
-{% block header %}
-{% endblock %}
 
 {% block content %}
 
 <article class="h-entry">
   <h1 class="p-name">{{ page.title }}</h1>
-  
-  <h2>Summary</h2>
-  <p class="p-summary">
-    {% if page.summary %}
-    	{{ page.summary }}
-    {% else %}
-    {{ page.content | truncate(length=64) | striptags }}
-    {% endif %}
-
-    <h2>Content</h2>
   <div class="e-content">
     {{ page.content | safe }}
   </div>
   <p>Written and published by <a class="p-author h-card" href="https://celadon.moe/">Celadon Camellia</a> at <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date }}</time></p>
+  <h2>Summary</h2>
+  <div class="p-summary">
+    {% if page.summary %}
+    {{ page.summary | safe }}
+    {% else %}
+    {{ page.content | truncate(length=64) | striptags }}
+    {% endif %}</div>
 </article>
 
 {% endblock content %}

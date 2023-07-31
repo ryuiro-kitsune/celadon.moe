@@ -2,7 +2,9 @@
 title = "Off to college"
 weight = 1 
 authornote = "<p>I'm thinking about experiementing with short form updates on a MWF schedule.</p><p>Let's see how long I last lmao</p>"
-date = 2023-04-07
+date = 2023-04-07T12:00:00-05:00
+[taxonomies]
+characters=["John Egbert"]
 +++
 <p>
 John was excited.
@@ -11,6 +13,8 @@ John was excited.
 <p>
 In less than 24 hours, he would board a plane and fly to the first day of the rest of his life, to College!
 </p>
+
+<!-- more -->
 
 <p>
 He and his best friend in the whole world were finally going to be able to meet irl. He was going to have a college experience just like the movies, surrounded by his friends that he was going to make as soon as he got there.

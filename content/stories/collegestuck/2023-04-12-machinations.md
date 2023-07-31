@@ -3,8 +3,10 @@ title = "Machinations"
 weight = 3
 authornote = "<p>I'm planning on uploading twice tommorow for 4/13. This is a break in my upload schedule but, hear me out, its 4/13 and I need to do <em>something</em>.</p><p>Alternatively, I'll upload a longer short.</p><p>Whatever I do, I'll see y'all tmmrw.  =)</p>"
 date = 2023-04-12T12:00:00-05:00
+taxonomies.characters=["Rose Lalonde"]
 +++
 Rose wasn't sleeping, not that she ever slept really. A more accurate statement would be that she merely passed out every 18 odd hours.
+<!-- more -->
 
 In place of sleep on this specific night, she was shooting off messages to her friends across the United State in younger time-zones, filling the time between their replies with putting digital scrawls into her netbook's meager storage space.
 
