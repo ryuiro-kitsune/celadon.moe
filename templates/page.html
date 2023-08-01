@@ -9,8 +9,8 @@
     {{ page.content | safe }}
   </div>
   <p>Written and published by <a class="p-author h-card" href="https://celadon.moe/">Celadon Camellia</a> at <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date }}</time></p>
-  <h2>Summary</h2>
-  <div class="p-summary">
+  <h2 hidden>Summary</h2>
+  <div hidden class="p-summary">
     {% if page.summary %}
     {{ page.summary | safe }}
     {% else %}
