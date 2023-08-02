@@ -7,25 +7,6 @@ summary = "<p>John and Dave move in together for college as Rose executes the pr
 [taxonomies]
 characters = ["John Egbert", "Dave Strider", "Dirk Strider", "Rose Lalonde","Damara Medigo", "Jade Harley", "Dad Egbert"]
 +++
-<!--off to college-->
-John was excited.
-
-In less than 24 hours, he would board a plane and fly to the first day of the rest of his life, to College!
-
-He and his best friend in the whole world were finally going to be able to meet irl. He was going to have a college experience just like the movies, surrounded by his friends that he was going to make as soon as he got there.
-
-He carefully repacked all of his posters, books, and clothes into his suitcases and got ready once again for the morning. He began pacing around his room making sure every little thing was ready for the next day.
-
-He carefully repacked all of his posters, books, and clothes into his suitcases and got ready once again for the morning. He began pacing around his room making sure every little thing was ready for the next day.
-
-If he forgot a single thing, his dad couldn't drive from Washington to Iowa to deliver it, so he needed to get this right.
-
-After he made sure everything was ready, he crawled into bed and tried to fall asleep.
-
-He just knew Dave must be brimming with excitment at this change in bothof their lives!
-
-{{ hr() }} 
-
 <!--Uncertainty-->
 The car ride was quiet. Dirk had both the wheel of his dingy Honda Civic and the aux, causing the only sound to be the faint pop music coming from the speakers.
 
@@ -53,7 +34,7 @@ Dave sat in silence, "Because I'm following you now, and John is following me. Y
 
 "Well, I would fucking *hope* that you care about your school as much as you care about John's!"
 
-The car regressed into a silence broken up by the faint blare of the radio. A mile flew by and Dirk knew he should say something.
+The car descended into a silence broken up by the faint blare of the radio. A mile flew by and Dirk knew he should say something.
 
 It took another mile for him to figure out what.
 
@@ -72,7 +53,7 @@ The car was silent for a long while after that.
 
 Rose wasn't sleeping, not that she ever slept really. A more accurate statement would be that she merely passed out every 18 odd hours.
 
-In place of sleep on this specific night, she was shooting off messages to her friends across the United State in younger time-zones, filling the time between their replies with putting digital scrawls into her netbook's meager storage space.
+In place of sleep on this specific night, she was shooting off messages to her friends across the United States in younger time-zones, filling the time between their replies with putting digital scrawls into her netbook's meager storage space.
 
 She was excited to follow in her sister and mother's footsteps, if not in revolutionizing the scientific disciplines as they aspired to, then by writing a story that would render even the most wretched humans blubbering wrecks of emotion at the sheer brilliance of the story.
 
@@ -80,7 +61,7 @@ Naturally, she would be enrolling in their school's creative writing program. Sh
 
 She also couldn't wait for the look on Dave's face when he realized the secret she'd been keeping from him.
 
-He had no idea the utter domination that would follow.
+This was going to be fun.
 
 {{ hr() }} 
 Dave's phone vibrated in his pocket about 40 miles outside the city limits. He took it out and replied to Rose.
@@ -96,15 +77,17 @@ Dave's phone vibrated in his pocket about 40 miles outside the city limits. He t
 <span class="dave">TG: and then the rest of the times id ask you gave batshit answers</span><br />
 <span class="dave">TG: like the moon</span><br />
 <span class="dave">TG: or fucking r'lyeh or some shit</span><br />
+<span class="rose">TT: im honoured you remembered that</span><br />
 <span class="rose">TT: why ask now?</span><br />
 <span class="dave">TG: ive had a lot of time to think</span><br />
 <span class="rose">TT: well i'm afraid my choice of school isn't very noteworthy</span><br />
 <span class="rose">TT: (in an absolute sense at least)</span><br />
-<span class="rose">TT: i'm just going to where my mother and dear sweet older sister are</span><br />
+<span class="rose">TT: i'm just going to where my mother and dear sweet elder sister are</span><br />
 <span class="dave">TG: so we're in the same boat then</span><br />
 <span class="dave">TG: no real agency over our actions</span><br />
 <span class="dave">TG: just drifting</span><br />
 <span class="rose">TT: i'm going to punch you for that melodrama</span><br />
+<span class="rose">TT: we both had a fair and real choice</span><div />
 <span class="rose">TT: if i wanted to go to a different school i would have</span><br />
 <span class="rose">TT: this</span><br />
 <span class="rose">TT: is going to be oh so much fun</span><br />
@@ -151,7 +134,7 @@ Dave felt another buzz and quickly replied to the final Rose text of the day.
 <span class="rose">TT: i need your dorm address</span><br />
 <span class="rose">TT: so i can send you mail</span><br />
 <span class="dave">TG: yeah sure, whatever</span><br />
-<span class="dave">TG: greene 304</span>
+<span class="dave">TG: post 304</span>
 </div>
 
 {{ hr() }} 
