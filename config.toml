@@ -24,7 +24,7 @@ taxonomies = [
 	{ name = "characters"},
 	{ name = "fandoms"},
 	{ name = "rating"},
-	{tags = "tags" }
+	{ name = "tags" }
 ]
 
 render_emoji = true
