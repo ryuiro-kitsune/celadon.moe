@@ -21,7 +21,7 @@
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
    </h2>
       <div>
-	{{ page.summary | safe }}
+	{{ page.summary | safe }}{{ page.description | safe }}
       </div>
   </div>
   {% endfor %}
