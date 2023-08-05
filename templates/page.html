@@ -18,4 +18,20 @@
     {% endif %}</div>
 </article>
 
+<h2>
+  Tags
+</h2>
+<p class="small">
+  {% if page.taxonomies.tags %}
+  {% for taxonomy in page.taxonomies.tags %}
+  <a href="/tags/{{taxonomy}}">#{{ taxonomy }}</a> 
+  {%endfor%}
+  {% endif %}
+  {% if page.taxonomies.characters %}
+  {% for taxonomy in page.taxonomies.characters %}
+  <a href="/characters/{{taxonomy | slugify}}">#{{ taxonomy }}</a> 
+  {%endfor%}
+  {% endif %}
+</p>
+
 {% endblock content %}

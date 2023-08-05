@@ -1,10 +1,12 @@
 +++
 title = "Moving in Together"
 author = ["Celadon Camellia"]
-date = 2023-08-03T14:23:00-07:00
+date = 2023-08-05T14:41:00-07:00
+taxonomies.tags = ["Story"]
 draft = false
 weight = 3001
-summary = "<p>John and Dave move in together for college as Rose executes the prank of her life.</p>"
+taxonomies.characters = ["Dave Strider", "Rose Lalonde", "Dirk Strider", "Damara Megido"]
+taxonomies.rating = ["PG-13"]
 +++
 
 The car ride was quiet. Dirk had both the wheel of his dingy Honda Civic and the aux, causing the only sound to be the faint pop music coming from the speakers.
@@ -22,7 +24,7 @@ Dave continued staring.
 "It's just us now, we gotta be able to talk, Dave."
 
 "Why did you choose Iowa?" His voice was quieter than it was in public, "I've been thinking about it for the past three hours, but I don't know the reason that of all the schools in Texas, of all the schools in the _country_, why'd you pick a school in the fucking second largest city in Iowa?"
-
+nn
 Dirk adjusted the center mirror to look at the car behind them, "Why are you thinking about this now and not when I applied two years ago?"
 
 Dave sat in silence, "Because I'm following you now, and John is following me. Your descion matters, it didn't then. It just was one more impulsive descion you'd made in a long line of impulsive decisions."
@@ -55,11 +57,11 @@ In place of sleep on this specific night, she was shooting off messages to her f
 
 She was excited to follow in her sister and mother's footsteps, if not in revolutionizing the scientific disciplines as they aspired to, then by writing a story that would render even the most wretched humans blubbering wrecks of emotion at the sheer brilliance of the story.
 
-Naturally, she would be enrolling in their school's creative writing program. She would have preferred something farther from home, but going to the school that the two of them already were at would save her the obligation of returning home, leaving her free to pursue excellence.
+Naturally, she would be enrolling in their school's creative writing program. She would have preferred something further from her elders, but going to the school that they resided in would save her the obligation of returning home, leaving her free to pursue her goals. In addition to saving a helluva lot on air-travel.
 
-She also couldn't wait for the look on Dave's face when he realized the secret she'd been keeping from him.
+And, of course, going to this school in particular had a few, shall we say, niche benefits that she had discovered some time after she had applied.
 
-This was going to be fun.
+She also couldn't wait for the look on Dave's face when he realized it. This was going to be fun.
 
 {{ hr() }}
 
@@ -142,7 +144,7 @@ The elevator was silent as Rose ascended.
 
 Rose had poleitly declined her sister's offer to "help her move in," as she had been on campus enough times that she could manage by herself, thank you very much. Besides its not like she had more than a small bag to move in with.
 
-The elevator dinged and the doors opened to the ninth floor of Murray hall. Rose strolled forward to take a peek through the window.
+The elevator dinged and the doors opened to the ninth floor of Roosevelt hall. Rose strolled forward to take a peek through the window.
 
 The sight was breathtaking and filled her with feelings of power and bliss. The fact that she could just make out dave's dorm building from the corner of her vision contributed to that feeling.
 
@@ -181,26 +183,6 @@ Having realized the issue, she swiped a T-Shirt from on top of her bed and put i
 "Aight, see you tonight or whatever."
 
 Rose carefully set her bag on her bed and left the room significantly less resolute than she entered it.
-
-{{ hr() }}
-
-A small family of three---a smartly dressed single father and his twin children---sat in the Spokane International Airport’s A concourse while eating sandwhiches.
-
-"Now boarding flight 413620 to Denver Colorado. Repeat, now boarding flight 413620 to Denver Colorado."
-
-The father stood up and clapped his hands together, "Alright gang! Ready to head off into a new tommorow?"
-
-The twins, John and Jade, rolled their eyes in sync.
-
-"Now, now," he continued, "this is an excedingly important time in a young man and woman’s life."
-
-"Dad," John said, "that’s what you tell us when we’re checking into our dorms..."
-
-"Not when we’re boarding the plane to the layover," Jade finished.
-
-"Pish posh! Every step on your journey matters!"
-
-The twins smiled to themselves, gathered their bags, and followed their dad into his new tommorow.
 
 {{ hr() }}
 
@@ -294,7 +276,7 @@ The two broke the hug and John brought his bag into their new home for the next 
 
 {{ hr() }}
 
-The other side of the door stood a short haired girl wearing a grey sweater, a pleated skirt, and cherry red makeup.
+The other side of the door stood a short haired girl wearing grey sweater, a pleated skirt, and cherry red makeup.
 
 "Who are you?"
 

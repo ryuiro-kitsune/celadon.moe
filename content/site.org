@@ -2,17 +2,70 @@
 #+HUGO_BASE_DIR: ../
 #+startup: logdone fold
 
-* Blog                                                                 :blog:
+* Blog                                                                 :Blog:
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog
 :END:
-** DONE Zola go brrr
-CLOSED: [2023-08-04 Fri 12:02]
+** DONE Site Update Finished!!! :Zola:WebDev:I__don:t__even__know__why__this__took__a__whole__month:pain:
+CLOSED: [2023-08-05 Sat 14:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: blog-update-extravaganza
 :END:
-Blog
+Wowzas! Porting the entire site into Zola took longer than expected, lets chat about it.
 #+hugo: more
+
+So, I used to use 11ty. I really like 11ty as a program and this it is very compatent at what it does. Unfortunatly---or fortunatly, depending which radical group you've fallen in with---I am not a Javascript dev. I know zero JS code and that makes 11ty painful to get working. And so, I moved on to Rustier pastures.
+
+Zola is delightful. It comes with [[https://sass-lang.com/][Sass]] support built in, and is much more opinionated than 11ty on how to structure your site.
+
+Now, I love unopinionated software as much as the next doofus---the fact I can point 11ty at a single json file plus template and it will render out a giftlist website for me is magical---but the freeform nature of 11ty was making it difficult to manage my website, and even making me try to do things that I /technically/ could do but /really/ shouldn't have (most of the old [[https://celadon.moe/][celadon (dot) moe]] site is now permentally embedded in json files and written in unicode escaped html) so having the software gently guide me away from that garbage is much appriciated.
+
+"So you switched ssgs, but what about the format you're storing the content in?" I hear no one ask. Well, lemme tell you.
+
+The original site had this format for posts in the backend:
+
+#+begin_src json
+      {
+      "title": "Uncertainty",
+      "subseries": "Moving in Together",
+      "number": 2,
+      "authornote": "<p>Day two of this serial flash fiction experiment.<p>I'm enjoying the process so far, but I'm not sure how sustainable it is for me personally.</p><p>I'm planning on updating the home page for this series to look a bit nicer tommorow after I finish wednesday's entry.</p><p>Ta-ta for now gang!</p>",
+      "previous": "Off to college",
+      "next": "Machinations",
+      "date": "2023-04-10T12:00-05:00",
+      "content": "\u003Cp\u003EThe car ride was quiet. Dirk had the wheel of his dingy Honda Civicand had the aux, causing the only sound to be the faint pop music comingfrom the speakers.\u003C/p\u003E\u003Cp\u003E“So bro, you ready for your new life of freedom?”\u003C/p\u003E\u003Cp\u003EDave stared out of the car window at the endless fields of nothingand farmland.\u003C/p\u003E\u003Cp\u003E“Bro? You alive over there.”\u003C/p\u003E\u003Cp\u003EDave continued staring.\u003C/p\u003E\u003Cp\u003E“We’re all we’re gonna have for this next year, you gotta be able totalk to me about things Dave.”\u003C/p\u003E\u003Cp\u003E“Why did you choose Iowa?” His voice was quieter than it was inpublic, like satin to denim, “I’ve been thinking about it for the pastthree hours, but I don’t know the reason that of all the schools inTexas, of all the schools in the \u003Cem\u003Ecountry\u003C/em\u003E, why’d you pick aschool in not even the largest city in Iowa?”\u003C/p\u003E\u003Cp\u003EDirk adjusted the center mirror to look at the car beheind them, “Whyis this weighing on your consious now and not when I applied two yearsago?”\u003C/p\u003E\u003Cp\u003EDave sat in silence, “Because I’m following you now, and John isfollowing me. Your descion matters, it didn’t then. It just was one moreimpulsive descion you’d made in a long line of impulsive descions.”\u003C/p\u003E\u003Cp\u003E“Dude, where’s this coming from? You should have said something whenyou were fucking applying.”\u003C/p\u003E\u003Cp\u003E“Fuck off, I didn’t know John was going to apply to the same collegeas me! He didn’t even ask why I was applying!”\u003C/p\u003E\u003Cp\u003EThe car was silent once again. After two miles clicked by, Dirkfinally replied.\u003C/p\u003E\u003Cp\u003E“I applied because Roxy’s mom works here. She was my only friend bythe end of school so I wanted to be with her.”\u003C/p\u003E\u003Cp\u003E“…is it a good school.”\u003C/p\u003E\u003Cp\u003E“I would have told you to go somewhere else if it wasn’t at leastokay.”\u003C/p\u003E\u003Cp\u003EThe car was silent for a long while after that.\u003C/p\u003E"
+  },
+#+end_src
+
+Yeah, that's garbage. I decided to switch to using org-mode and ox-hugo to generate makrdown files from a central org-file. Now the same post looks like this:
+
+#+begin_src org
+  ,*** TODO Moving in Together
+  :PROPERTIES:
+  :EXPORT_FILE_NAME: moving-in-together
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :taxonomies.characters '("Dave Strider" "Rose Lalonde" "Dirk Strider" "Damara Megido" )
+  :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :taxonomies.rating '("PG-13")
+  :END:
+  The car ride was quiet. Dirk had both the wheel of his dingy Honda Civic and the aux, causing the only sound to be the faint pop music coming from the speakers.
+
+  Dirk glanced up
+
+  "So bro, you ready for your new life of freedom?"
+
+  Dave stared out of the car window at the endless fields of nothing and farmland.
+
+  "Bro? You alive over there."
+
+  Dave continued staring.
+
+  blah blah blah etc
+#+end_src
+
+This is much nicer.
+
+But yeah, those are the two main changes. I also cleaned up the css a little and rewrote the templates.
+
+Anyways, bye!
 ** TODO Gemini: An Odyssey
 :PROPERTIES:
 :EXPORT_FILE_NAME: gemini-an-odyssey
@@ -34,7 +87,7 @@ Time to bring back in the elephant. Yes, Gemini feels like a stripped down versi
 
 A lot of us don't really know what the Web is. Let's fix that.
 
-* Stories                                                             :story:
+* Stories                                                             :Story:
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: stories
 :END:
@@ -43,10 +96,12 @@ A lot of us don't really know what the Web is. Let's fix that.
 :EXPORT_HUGO_SECTION_FRAG: collegestuck
 :EXPORT_HUGO_WEIGHT: auto
 :END:
-*** TODO Moving in Together
+*** DONE Moving in Together
+CLOSED: [2023-08-05 Sat 14:41]
 :PROPERTIES:
 :EXPORT_FILE_NAME: moving-in-together
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :description "<p>John and Dave move in together for college as Rose executes the prank of her life.</p>"
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :taxonomies.characters '("Dave Strider" "Rose Lalonde" "Dirk Strider" "Damara Megido" )
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :taxonomies.rating '("PG-13")
 :END:
 The car ride was quiet. Dirk had both the wheel of his dingy Honda Civic and the aux, causing the only sound to be the faint pop music coming from the speakers.
 
@@ -63,7 +118,7 @@ Dave continued staring.
 "It's just us now, we gotta be able to talk, Dave."
 
 "Why did you choose Iowa?" His voice was quieter than it was in public, "I've been thinking about it for the past three hours, but I don't know the reason that of all the schools in Texas, of all the schools in the /country/, why'd you pick a school in the fucking second largest city in Iowa?"
-
+nn
 Dirk adjusted the center mirror to look at the car behind them, "Why are you thinking about this now and not when I applied two years ago?"
 
 Dave sat in silence, "Because I'm following you now, and John is following me. Your descion matters, it didn't then. It just was one more impulsive descion you'd made in a long line of impulsive decisions."
@@ -190,7 +245,7 @@ The elevator was silent as Rose ascended.
 
 Rose had poleitly declined her sister's offer to "help her move in," as she had been on campus enough times that she could manage by herself, thank you very much. Besides its not like she had more than a small bag to move in with.
 
-The elevator dinged and the doors opened to the ninth floor of Murray hall. Rose strolled forward to take a peek through the window.
+The elevator dinged and the doors opened to the ninth floor of Roosevelt hall. Rose strolled forward to take a peek through the window.
 
 The sight was breathtaking and filled her with feelings of power and bliss. The fact that she could just make out dave's dorm building from the corner of her vision contributed to that feeling.
 
@@ -230,29 +285,7 @@ Having realized the issue, she swiped a T-Shirt from on top of her bed and put i
 
 Rose carefully set her bag on her bed and left the room significantly less resolute than she entered it.
 
-{{ hr() }}
- 
-
-A small family of three---a smartly dressed single father and his twin children---sat in the Spokane International Airport’s A concourse while eating sandwhiches.
-
-"Now boarding flight 413620 to Denver Colorado. Repeat, now boarding flight 413620 to Denver Colorado."
-
-The father stood up and clapped his hands together, "Alright gang! Ready to head off into a new tommorow?"
-
-The twins, John and Jade, rolled their eyes in sync.
-
-"Now, now," he continued, "this is an excedingly important time in a young man and woman’s life."
-
-"Dad," John said, "that’s what you tell us when we’re checking into our dorms..."
-
-"Not when we’re boarding the plane to the layover," Jade finished.
-
-"Pish posh! Every step on your journey matters!"
-
-The twins smiled to themselves, gathered their bags, and followed their dad into his new tommorow.
-
-{{ hr() }}
- 
+{{ hr() }} 
 
 At the tender hour of 3:30 AM, Terezi had her laptop and an internet chess program.
 
@@ -348,7 +381,7 @@ The two broke the hug and John brought his bag into their new home for the next 
 
 {{ hr() }}
  
-The other side of the door stood a short haired girl wearing a grey sweater, a pleated skirt, and cherry red makeup.
+The other side of the door stood a short haired girl wearing grey sweater, a pleated skirt, and cherry red makeup.
 
 "Who are you?"
 
@@ -397,6 +430,5 @@ Rose smiled, "Perhaps, but the bulk of the joke was the slow realization that yo
 "Or anyone else for that manner."
 
 They smiled at each other for a moment before Dave started again, "Come on, lemme introduce you to John."
-
 
 *** TODO The many faces of Rose Lalonde
