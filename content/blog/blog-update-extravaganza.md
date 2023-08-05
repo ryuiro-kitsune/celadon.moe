@@ -2,7 +2,7 @@
 title = "Site Update Finished!!!"
 author = ["Celadon Camellia"]
 date = 2023-08-05T14:39:00-07:00
-taxonomies.tags = ["Blog", "Zola", "WebDev", "I Don", "t even know why this took a whole month", "pain"]
+taxonomies.tags = ["Blog", "Zola", "WebDev", "I Dont even know why this took a whole month", "pain"]
 draft = false
 +++
 

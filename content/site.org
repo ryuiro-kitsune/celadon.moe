@@ -6,7 +6,7 @@
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: blog
 :END:
-** DONE Site Update Finished!!! :Zola:WebDev:I__don:t__even__know__why__this__took__a__whole__month:pain:
+** DONE Site Update Finished!!! :Zola:WebDev:I__dont__even__know__why__this__took__a__whole__month:pain:
 CLOSED: [2023-08-05 Sat 14:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: blog-update-extravaganza
