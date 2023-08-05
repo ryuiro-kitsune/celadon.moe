@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="/css/celadon-neo.css">
+{% endblock header %}
+
+{% block content %}
+{{ section.content | safe }}
+
+<ul>
+  <li><a rel="me" href="https://sakurajima.social/@celadonCamellia">Fediverse/ActivityPub</a></li>
+  </ul>
+{% endblock content %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock footer %}

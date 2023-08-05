@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<article class="h-entry">
+  <h1 class="p-name">{{ page.title }}</h1>
+  <div class="e-content">
+    {{ page.content | safe }}
+  </div>
+  <p>Written and published by <a class="p-author h-card" href="https://celadon.moe/">Celadon Camellia</a> at <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date }}</time></p>
+  <h2 hidden>Summary</h2>
+  <div hidden class="p-summary">
+    {% if page.summary %}
+    {{ page.summary | safe }}
+    {% else %}
+    {{ page.content | truncate(length=64) | striptags }}
+    {% endif %}</div>
+</article>
+
+<h2>
+  Tags
+</h2>
+<p class="small">
+  {% if page.taxonomies.tags %}
+  {% for taxonomy in page.taxonomies.tags %}
+  <a href="/tags/{{taxonomy}}">#{{ taxonomy }}</a> 
+  {%endfor%}
+  {% endif %}
+  {% if page.taxonomies.characters %}
+  {% for taxonomy in page.taxonomies.characters %}
+  <a href="/characters/{{taxonomy | slugify}}">#{{ taxonomy }}</a> 
+  {%endfor%}
+  {% endif %}
+</p>
+
+{% endblock content %}
