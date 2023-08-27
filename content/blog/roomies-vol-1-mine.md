@@ -1,8 +1,8 @@
 +++
 title = "Roomies! Volume 1 is now mine!"
 author = ["Celadon Camellia"]
-date = 2023-08-11T17:43:00-07:00
-taxonomies.tags = ["Blog"]
+date = 2023-08-11T17:43:00-05:00
+taxonomies.tags = ["blog", "Roomies", "Dumbing of Age", "Collecting", "its not as bad as youd think i swear"]
 draft = false
 +++
 

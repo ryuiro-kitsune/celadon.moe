@@ -1,8 +1,8 @@
 +++
 title = "Site Update Finished!!!"
 author = ["Celadon Camellia"]
-date = 2023-08-05T14:39:00-07:00
-taxonomies.tags = ["Blog", "Zola", "WebDev", "I Dont even know why this took a whole month", "pain"]
+date = 2023-08-05T14:39:00-05:00
+taxonomies.tags = ["blog", "Zola", "WebDev", "I Dont even know why this took a whole month", "pain"]
 draft = false
 +++
 
