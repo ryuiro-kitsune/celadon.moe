@@ -1,0 +1,14 @@
+[
+    {
+    "name": "Articles",
+    "url": "/a/"
+},
+    {
+    "name": "Stories",
+    "url": "/s/"
+},
+    {
+    "name": "Blog",
+    "url": "/b/"
+}
+]

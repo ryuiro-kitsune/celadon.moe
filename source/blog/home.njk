@@ -1,0 +1,15 @@
+---
+permalink: "/b/"
+css: celadon
+layout: index.njk
+title: "Sketches in Ascii: Blog"
+---
+    {%- for post in collections.blog | reverse -%}
+    <h2><a href="{{ post.url }}">{{ post.data.date | formatDate("YYYY-MM-DD") }} &mdash; {{ post.data.title }}</a></h2>
+    {{post.data.summery | safe }}
+    <hr>
+    {%- endfor -%}
+    {% include "footer.html" %}
+  </body>
+</html>
+
