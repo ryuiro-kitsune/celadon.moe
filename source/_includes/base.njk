@@ -14,7 +14,12 @@
 	</style>
 
 	<body>
-		{% block content %}{% endblock %}
+		{% block menu %}
+			{% include "menu.html" %}
+		{% endblock %}
+		<main>
+			{% block content %}{% endblock %}
+		</main>
 		{% include "footer.html" %}
 	</body>
 </html>
