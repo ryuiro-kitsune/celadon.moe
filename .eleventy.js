@@ -70,9 +70,10 @@ module.exports = function(eleventyConfig) {
     //  eleventyConfig.setLibrary("md", markdownLib);
     
     eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("source/css/");
+    //eleventyConfig.addPassthroughCopy("source/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
     eleventyConfig.addPassthroughCopy("source/images/");
+    eleventyConfig.addPassthroughCopy("source/robots.txt");
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
 	return collection.images("images/*");
