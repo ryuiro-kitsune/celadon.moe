@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs");
+const sass = require("sass");
 var utc = require('dayjs/plugin/utc');
 var advancedFormat = require('dayjs/plugin/advancedFormat');
 var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
@@ -16,6 +17,22 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('formatDate', function(date, format) {
 	return dayjs(date).format(format);
     });
+
+	eleventyConfig.addTemplateFormats("scss");
+	// Creates the extension for use
+	eleventyConfig.addExtension("scss", {
+		outputFileExtension: "css", // optional, default: "html"
+
+		// `compile` is called once per .scss file in the input directory
+		compile: async function (inputContent) {
+			let result = sass.compileString(inputContent);
+
+			// This is the render function, `data` is the full data cascade
+			return async (data) => {
+				return result.css;
+			};
+		},
+	});
 
     eleventyConfig.addFilter('unescape', function(str) {
 	let converted = str.replace(/\\u003c/g, '<').replace(/\\u003e/g, ">").replace(/\\u0026/g, "&");
