@@ -1,7 +1,6 @@
 ---
 title: Sketches in Ascii
 layout: index
-css:
 ---
 # Temporary Greeting
 
