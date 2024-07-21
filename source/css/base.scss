@@ -1,4 +1,4 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: jost, Futura,sans-serif;
 
 // Catppuccin Latte scheme
 $rosewater: #dc8a78;
@@ -28,9 +28,32 @@ $base: #eff1f5;
 $mantle: #e6e9ef;
 $crust: #dce0e8;
 
+// Mixins
+@mixin smol-centering {
+  display: grid;
+  place-content: center;
+}
+
 body {
   font: 100% $font-stack;
+  font-size:16pt;
   color: $text;
   background-color: $base;
+  nav {
+    color: $teal;
+    a {
+      color: $teal;
+    }
+  }
+  main {
+    padding: 1.5rem clamp(1rem,7%,4rem);
+    strong {
+      color: $mauve;
+    }
+    em {
+      color: $peach;
+    }
+  }
+  
 }
 
