@@ -53,6 +53,13 @@ body {
     em {
       color: $peach;
     }
+
+    article {
+      time {
+        font-size: 12pt;
+        color: $subtext0;
+      }
+    }
   }
   
 }
