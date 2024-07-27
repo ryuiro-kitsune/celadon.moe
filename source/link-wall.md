@@ -13,4 +13,4 @@ layout: index
 - [Dumbing of Age](https://www.dumbingofage.com/)
 
 ##### Button Wall
- <a href="https://humanmademark.com"><img src="/images/buttons/human-made.gif"></a>
+ <a href="https://brainmade.org/"><img src="/images/buttons/human-made.gif"></a>
