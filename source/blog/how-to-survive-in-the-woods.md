@@ -3,7 +3,7 @@ title: A short review of "How to Survive in the Woods"
 date: 2024-07-28
 ---
 
-*How to Survive in the Woods: Camping, Fires, Trailing, Tramping, Getting Lost, & Finding Your Way Home* is a republishing of a book by **Alpheus Hyatt Verrill** titled bluntly *The Book of Camping* and published in 1917. Normally I'm a massive dork and love reading old books, but I didn't buy a book published in 1917, I bought a book published in 2023 and am thusly not interested in reading it for its interesting historical context, but it's actual, practical advice.
+*[How to Survive in the Woods: Camping, Fires, Trailing, Tramping, Getting Lost, & Finding Your Way Home](https://microcosmpublishing.com/catalog/zines/3821)* is a republishing of a book by **Alpheus Hyatt Verrill** titled bluntly *The Book of Camping* and published in 1917. Normally I'm a massive dork and love reading old books, but I didn't buy a book published in 1917, I bought a book published in 2023 and am thusly not interested in reading it for its interesting historical context, but it's actual, practical advice.
 
 ## Positives
 
