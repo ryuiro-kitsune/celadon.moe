@@ -15,5 +15,8 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "dayjs": "^1.11.7",
     "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "markdown-it-implicit-figures": "^0.12.0"
   }
 }

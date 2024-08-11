@@ -1,6 +1,7 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs");
 const sass = require("sass");
+const impFigures = require("markdown-it-implicit-figures");
 var utc = require('dayjs/plugin/utc');
 var advancedFormat = require('dayjs/plugin/advancedFormat');
 var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
@@ -56,7 +57,11 @@ module.exports = function(eleventyConfig) {
     // Markdown experiement
     
     //    let markdownIt = require("markdown-it");
-
+	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(impFigures, 
+{
+ figcaption: true,  // <figcaption>alternative text</figcaption>, default: false
+}
+	));
     
     let options = {
 	html: true, // Enable HTML tags in source
@@ -73,6 +78,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
     //eleventyConfig.addPassthroughCopy("source/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
+    eleventyConfig.addPassthroughCopy("source/js/");
     eleventyConfig.addPassthroughCopy("source/images/");
     eleventyConfig.addPassthroughCopy("source/robots.txt");
     eleventyConfig.addCollection("posts", function(collection) {
