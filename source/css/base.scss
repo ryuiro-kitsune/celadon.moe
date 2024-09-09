@@ -46,6 +46,9 @@ body {
   font: 100% $font-stack;
   font-size: $base-size;
   color: $text;
+   text-align: justify;
+  text-justify: inter-word;
+
   // font-feature-settings: "liga" 1;
   font-variant-ligatures: normal;
   font-feature-settings: "calt" 1; 
@@ -56,9 +59,9 @@ body {
   font-style: normal;
   background-color: $base;
   nav {
-    color: $teal;
-    a {
-      color: $teal;
+      font-size: $base-size * .75;
+      a:hover {
+	  color: $sky;
     }
   }
   main {
@@ -72,20 +75,42 @@ body {
     }
 
     article {
-      time {
-        font-size: $base-size;
-        color: $subtext0;
-      }
-      img {
-	  width: 45ch;
-      }
-      figcaption {
-        font-size: $base-size;
-        color: $subtext1;
-	width: 45ch;
-      }
+	time {
+            font-size: $base-size;
+            color: $subtext0;
+	    line-height: 1.4;
+	}
+	img {
+	    width: 45ch;
+	}
+	figcaption {
+            font-size: $base-size;
+            color: $subtext1;
+	    width: 45ch;
+	}
     }
   }
   
+}
+
+a {
+    color: $sapphire;
+    text-decoration: none;
+    color: inherit;
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+a:after {
+    position: relative;
+    content: "°";
+    font-size: 90%;
+    top: -0.1em;
+
+    color: $maroon;
+    font-feature-settings: "caps";
+    font-variant-numeric: normal;
+}
+a:hover {
+    color: $green;
 }
 
