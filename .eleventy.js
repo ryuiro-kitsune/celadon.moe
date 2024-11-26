@@ -76,6 +76,7 @@ module.exports = function(eleventyConfig) {
     //  eleventyConfig.setLibrary("md", markdownLib);
     
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("admin");
     //eleventyConfig.addPassthroughCopy("source/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
     eleventyConfig.addPassthroughCopy("source/js/");
