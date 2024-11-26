@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: ryuiro-kitsune/celadon.moe
+  branch: main # Branch to update (optional; defaults to master)
+  site_domain: https://celadon.moe
+  base_url: https://celadon.moe
+  auth_endpoint: /api/auth
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
