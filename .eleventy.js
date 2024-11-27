@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
 	return dayjs(date).format(format);
     });
 
-	eleventyConfig.addPlugin(pluginRss);
+	//eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addTemplateFormats("scss");
 	// Creates the extension for use
 	eleventyConfig.addExtension("scss", {
