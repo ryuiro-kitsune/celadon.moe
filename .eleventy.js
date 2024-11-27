@@ -51,7 +51,7 @@ module.exports = function(eleventyConfig) {
     });
     
     //Rss
-    eleventyConfig.addPlugin(pluginRss);
+    //eleventyConfig.addPlugin(pluginRss);
 
     
     // Markdown experiement
