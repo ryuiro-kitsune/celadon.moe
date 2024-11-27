@@ -1,4 +1,4 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+//const pluginRss = require("@11ty/eleventy-plugin-rss");
 const dayjs = require("dayjs");
 const sass = require("sass");
 const impFigures = require("markdown-it-implicit-figures");
@@ -76,7 +76,7 @@ module.exports = function(eleventyConfig) {
     //  eleventyConfig.setLibrary("md", markdownLib);
     
     eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("admin");
+    eleventyConfig.addPassthroughCopy("source/admin/");
     //eleventyConfig.addPassthroughCopy("source/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
     eleventyConfig.addPassthroughCopy("source/js/");
