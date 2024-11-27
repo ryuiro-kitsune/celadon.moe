@@ -34,7 +34,8 @@ $mantle: #e6e9ef;
 $crust: #dce0e8;
 
 //15--25px
-$base-size: clamp(15px,17px,25px);
+//$base-size: clamp(15px,17px,25px);
+$base-size: 10pt
 
 // Mixins
 @mixin smol-centering {
