@@ -3,6 +3,7 @@ backend:
   repo: ryuiro-kitsune/celadon.moe
   branch: main # Branch to update (optional; defaults to master)
   site_domain: https://celadon.moe
+  use_graphql: true
   base_url: https://celadon.moe
   auth_endpoint: /api/auth
 media_folder: "source/images/"
