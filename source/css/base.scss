@@ -35,7 +35,7 @@ $crust: #dce0e8;
 
 //15--25px
 //$base-size: clamp(15px,17px,25px);
-$base-size: 10pt
+$base-size: 20px
 
 // Mixins
 @mixin smol-centering {
@@ -115,3 +115,9 @@ a:hover {
     color: $green;
 }
 
+footer {
+  ul {
+  list-style-type: none;
+  display: inline-block;
+}
+}
