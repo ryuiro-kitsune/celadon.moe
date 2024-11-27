@@ -8,6 +8,7 @@ backend:
   auth_endpoint: /api/auth
 media_folder: "source/images/"
 public_folder: "/images"
+publish_mode: editorial_workflow
 collections:
   - name: "blog"
     label: "Blog"
