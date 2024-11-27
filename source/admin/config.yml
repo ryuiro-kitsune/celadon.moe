@@ -19,3 +19,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "article"
+    label: "Article"
+    folder: source/articles
+    description: "Longer articles that require research."
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Body", name: "body", widget: "markdown" }
