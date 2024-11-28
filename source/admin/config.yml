@@ -29,6 +29,7 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "note" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "notes" }
   - name: "article"
     label: "Article"
     folder: source/articles
