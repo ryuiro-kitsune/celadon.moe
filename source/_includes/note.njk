@@ -1,0 +1,13 @@
+{% extends "base.njk" %}
+
+{% block title %}
+<title>Note {{ page.date.toISOString() }}</title>
+{% endblock %}
+
+{% block content %} 
+<article>
+<time datetime="{{ page.date.toISOString() | truncate(10,false,"") }}">{{page.date.toUTCString() | truncate(16,true,' ') }}</time>
+	{{ content | safe }}
+	
+</article>
+{% endblock %}
