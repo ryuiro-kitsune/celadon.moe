@@ -8,7 +8,7 @@ backend:
   auth_endpoint: /api/auth
 media_folder: "source/images/"
 public_folder: "/images"
-publish_mode: editorial_workflow
+publish_mode: simple
 collections:
   - name: "blog"
     label: "Blog"
@@ -18,6 +18,16 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: note
+    label: Note
+    folder: source/notes
+    create: true
+    identifier_field: date
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}"
+    fields:
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "note" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "article"
     label: "Article"
