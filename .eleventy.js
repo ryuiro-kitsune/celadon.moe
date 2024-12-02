@@ -80,6 +80,7 @@ module.exports = function(eleventyConfig) {
     //eleventyConfig.addPassthroughCopy("source/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
     eleventyConfig.addPassthroughCopy("source/js/");
+    eleventyConfig.addPassthroughCopy("source/celadon-moe.js");
     eleventyConfig.addPassthroughCopy("source/images/");
     eleventyConfig.addPassthroughCopy("source/robots.txt");
     eleventyConfig.addCollection("posts", function(collection) {
