@@ -43,6 +43,10 @@ $base-size: 20px;
 }
 
 body {
+  img {
+    max-width: 20%;
+    height: auto;
+}
   font: 100% $font-stack;
   font-size: $base-size;
   color: $text;
