@@ -4,14 +4,7 @@ layout: index
 ---
 <script>
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/celadon-moe.js')
-    .then( function () {
-        console.log('Success!');
-    })
-    .catch( function () {
-        console.error('Failure!');
-    });
-    console.log('All done.');
+  navigator.serviceWorker.register('/celadon-moe.js');
 }
 </script>
 Greetings friends and enemies! I welcome you all to my humble slice of land on this raging sea we call the internet and I hope you enjoy your stay.

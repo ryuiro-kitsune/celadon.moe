@@ -5,10 +5,9 @@
 {% endblock %}
 
 {% block content %} 
-<article>
-<h1>{{title}}</h1>
-<time datetime="{{ page.date.toISOString() | truncate(10,false,"") }}">{{page.date.toUTCString() | truncate(16,true,' ') }}</time>
+<article class="h-entry">
+<h1 class="p-name">{{title}}</h1>
 	{{ content | safe }}
-	
+<p>Written by <a class="p-author h-card" href="https://celadon.moe/">Celadon Camellia</a> and published <time class="dt-published" datetime="{{ page.date.toISOString() | truncate(10,false,"") }}">{{page.date.toUTCString() | truncate(16,true,' ') }}</time>
 </article>
 {% endblock %}

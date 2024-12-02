@@ -2,12 +2,15 @@
 layout: index
 ---
 
-<h3>Notes</h3>
+<section class="h-feed">
+<h3 class="p-name">Notes</h3>
+<p>By <a>
 <ul>
 {%- for post in collections.notes | reverse -%}
-  <li><p><a href="{{ post.url }}">{{ post.date.toISOString() | truncate(10,false,"") }}</a>
+  <li><p class="h-entry"><a class="u-url p-name" href="{{ post.url }}">{{ post.date.toISOString() | truncate(10,false,"") }}</a>
 {{ post.content | truncate(600) | safe }}</p>
   </li>
 
 {%- endfor -%}
 </ul>
+</section>
