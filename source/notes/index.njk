@@ -4,7 +4,7 @@ layout: index
 
 <section class="h-feed">
 <h3 class="p-name">Notes</h3>
-<p>By <a>
+<p>By <a class="h-card" rel="me" href="https://celadon.moe">Cellie</a></p>
 <ul>
 {%- for post in collections.notes | reverse -%}
   <li><p class="h-entry"><a class="u-url p-name" href="{{ post.url }}">{{ post.date.toISOString() | truncate(10,false,"") }}</a>
