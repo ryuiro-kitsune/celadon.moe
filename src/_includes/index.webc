@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name=viewport" content="width=device-width, initial-scale=1.0">
+		<link webc:keep rel="stylesheet" href="/css/base.css">
+		<link rel="icon" href="/images/logo.svg">
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+        <link rel="microsub" href="https://aperture.p3k.io/microsub/1001">
+        <link rel="pgpkey" href="https://celadon.moe/key.pub">
+		<title @text="text" webc:keep></title>
+	</head>
+
+
+	<body>
+        <cellie-menu></cellie-menu>
+		<main @raw="content">
+			
+		</main>
+		<cellie-footer></cellie-footer>
+	</body>
+</html>

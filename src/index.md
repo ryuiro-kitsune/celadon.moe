@@ -1,6 +1,6 @@
 ---
-title: Sketches in Ascii
-layout: index
+title: Sketches in UTF-8
+layout: index.webc
 ---
 <script>
 if (navigator.serviceWorker) {
