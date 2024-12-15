@@ -5,6 +5,22 @@ import pluginWebc from "@11ty/eleventy-plugin-webc";
 
 //Config
 export default async function(eleventyConfig) {
+	// Passthroughs
+	eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("source/key.pub");
+    eleventyConfig.addPassthroughCopy("source/admin/");
+    //eleventyConfig.addPassthroughCopy("source/css/");
+    eleventyConfig.addPassthroughCopy("*.xhtml");
+    eleventyConfig.addPassthroughCopy("source/js/");
+    eleventyConfig.addPassthroughCopy("source/celadon-moe.js");
+    eleventyConfig.addPassthroughCopy("source/images/");
+    eleventyConfig.addPassthroughCopy("source/robots.txt");
+    eleventyConfig.addCollection("posts", function(collection) {
+        return collection.getFilteredByGlob("posts/*.md");
+	return collection.images("images/*");
+    });
+
+
 	// Add Sass Scss plugin and configure
 	eleventyConfig.addTemplateFormats("scss");
 	eleventyConfig.addExtension("scss", {
@@ -21,7 +37,7 @@ export default async function(eleventyConfig) {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
 		collection: {
-			name: "posts", // iterate over `collections.posts`
+			name: "blog", // iterate over `collections.posts`
 			limit: 10,     // 0 means no limit
 		},
 		metadata: {
@@ -48,6 +64,21 @@ export default async function(eleventyConfig) {
 		// Options passed to @11ty/eleventy-plugin-bundle
 		bundlePluginOptions: {},
 	});
+
+	//misc 
+    eleventyConfig.addFilter('unescape', function(str) {
+	let converted = str.replace(/\\u003c/g, '<').replace(/\\u003e/g, ">").replace(/\\u0026/g, "&");
+	return converted;
+    });
+
+    eleventyConfig.addFilter('truncateStrDate', function(str) {
+	let truncated = str.slice(0, 10);
+	return truncated;
+    });
+
+    eleventyConfig.addFilter('append', function(str1, str2) {
+	return str1.concat(str2);
+    });
 };
 
 export const config = {
