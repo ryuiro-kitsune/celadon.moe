@@ -35,12 +35,24 @@ export default async function(eleventyConfig) {
 			}
 		}
 	});
+
+	//Webc configuration
+	eleventyConfig.addPlugin(pluginWebc, {
+		// Glob to find no-import global components
+		// (The default changed from `false` in Eleventy WebC v0.7.0)
+		components: "_includes/**/*.webc",
+		// Adds an Eleventy WebC transform to process all HTML output
+		useTransform: false,
+		// Additional global data used in the Eleventy WebC transform
+		transformData: {},
+		// Options passed to @11ty/eleventy-plugin-bundle
+		bundlePluginOptions: {},
+	});
 };
 
-//Directories
 export const config = {
 		dir: {
-		input: "source",
+		input: "_src",
 		output: "_site"
 		}
-};
+	};
