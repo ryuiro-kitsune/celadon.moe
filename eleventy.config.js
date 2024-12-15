@@ -52,7 +52,7 @@ export default async function(eleventyConfig) {
 
 export const config = {
 		dir: {
-		input: "_src",
+		input: "src",
 		output: "_site"
 		}
 	};
