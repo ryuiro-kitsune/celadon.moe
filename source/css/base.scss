@@ -42,6 +42,17 @@ $base-size: 20px;
   place-content: center;
 }
 
+article {
+  .e-content:after {
+    position: relative;
+    content: url(/images/logo.svg);
+    height: 12px;
+    width: 12px;
+  }
+}
+
+    
+
 body {
   img {
     max-width: 90%;
