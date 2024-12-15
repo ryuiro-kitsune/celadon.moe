@@ -1,0 +1,9 @@
+<div webc:for="note in notes.reverse()" webc:nokeep>
+    <ul>
+        <li><p class="h-entry">
+            <a @text="notes[note].date" class="u-url p-name" :href="notes[note].url"></a>
+        </p>
+        <p @raw="notes[note].content"></p>
+    </li>
+</ul>
+</div>
