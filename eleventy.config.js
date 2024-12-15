@@ -1,6 +1,7 @@
 //Imports
-import sass from "sass";
+import * as sass from "sass";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
 
 //Config
 export default async function(eleventyConfig) {
@@ -15,8 +16,7 @@ export default async function(eleventyConfig) {
 			};
 		},
 	});
-
-	// RSS Feed Configutation
+	//RSS Feed Configutation 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
