@@ -27,7 +27,7 @@ collections:
     slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}"
     fields:
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "note" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "note-page" }
       - { label: "Body", name: "body", widget: "text" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "notes" }
   - name: "article"
