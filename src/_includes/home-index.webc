@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head-bp>
+        <title>Sketches in UTF-8</title>
+    </head-bp>
+    <body>
+        <cellie-menu></cellie-menu>
+        <main @raw="$data.content"></main>
+        <cellie-footer></cellie-footer>
+    </body>
+</html>
