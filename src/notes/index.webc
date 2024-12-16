@@ -10,7 +10,7 @@
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
   <link rel="microsub" href="https://aperture.p3k.io/microsub/1001">
   <link rel="pgpkey" href="https://celadon.moe/key.pub">
-  <title @text="text" webc:keep></title>
+  <title @text="title" webc:keep></title>
 </head>
 <body>
   <cellie-menu></cellie-menu>
