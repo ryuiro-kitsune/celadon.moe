@@ -6,13 +6,13 @@ backend:
   use_graphql: true
   base_url: https://celadon.moe
   auth_endpoint: /api/auth
-media_folder: "source/images/"
+media_folder: "src/images/"
 public_folder: "/images"
 publish_mode: simple
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "source/blog"
+    folder: "src/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -21,7 +21,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: note
     label: Note
-    folder: source/notes
+    folder: src/notes
     create: true
     identifier_field: body
     slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}"
@@ -32,7 +32,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "hidden", default: "notes" }
   - name: "article"
     label: "Article"
-    folder: source/articles
+    folder: src/articles
     description: "Longer articles that require research."
     slug: "{{slug}}"
     create: true
