@@ -1,3 +1,8 @@
+---
+title: Sketches in UTF-8 Notes
+eleventyImport:
+    collections: ['notes']
+---
 <!DOCTYPE HTML>
 <html>
 <head>
