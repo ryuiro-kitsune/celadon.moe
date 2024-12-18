@@ -7,14 +7,14 @@ import pluginWebc from "@11ty/eleventy-plugin-webc";
 export default async function(eleventyConfig) {
 	// Passthroughs
 	eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("source/key.pub");
-    eleventyConfig.addPassthroughCopy("source/admin/");
-    //eleventyConfig.addPassthroughCopy("source/css/");
+    eleventyConfig.addPassthroughCopy("src/key.pub");
+    eleventyConfig.addPassthroughCopy("src/admin/");
+    //eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
-    eleventyConfig.addPassthroughCopy("source/js/");
-    eleventyConfig.addPassthroughCopy("source/celadon-moe.js");
-    eleventyConfig.addPassthroughCopy("source/images/");
-    eleventyConfig.addPassthroughCopy("source/robots.txt");
+    eleventyConfig.addPassthroughCopy("src/js/");
+    eleventyConfig.addPassthroughCopy("src/celadon-moe.js");
+    eleventyConfig.addPassthroughCopy("src/images/");
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
     eleventyConfig.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("posts/*.md");
 	return collection.images("images/*");
