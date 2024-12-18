@@ -6,7 +6,7 @@ backend:
   use_graphql: true
   base_url: https://celadon.moe
   auth_endpoint: /api/auth
-media_folder: "source/images/"
+media_folder: "src/images/"
 public_folder: "/images"
 publish_mode: simple
 collections:
@@ -21,18 +21,18 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: note
     label: Note
-    folder: source/notes
+    folder: src/notes
     create: true
     identifier_field: body
     slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}"
     fields:
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "note" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "note-page" }
       - { label: "Body", name: "body", widget: "text" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "notes" }
   - name: "article"
     label: "Article"
-    folder: source/articles
+    folder: src/articles
     description: "Longer articles that require research."
     slug: "{{slug}}"
     create: true
