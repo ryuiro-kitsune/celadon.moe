@@ -16,11 +16,16 @@
 
 	<body>
 		{% block menu %}
-			{% include "menu.html" %}
+{% renderTemplate "webc" %}
+<cellie-menu></cellie-menu>
+{% endrenderTemplate %}
+
 		{% endblock %}
 		<main>
 			{% block content %}{% endblock %}
 		</main>
-		{% include "footer.html" %}
+		{% renderTemplate "webc" %}
+<cellie-footer></cellie-footer>
+{% endrenderTemplate %}
 	</body>
 </html>

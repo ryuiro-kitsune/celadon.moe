@@ -19,6 +19,8 @@ export default async function(eleventyConfig) {
         return collection.getFilteredByGlob("posts/*.md");
 	return collection.images("images/*");
     });
+	let EleventyRenderPlugin = eleventyConfig.resolvePlugin("@11ty/eleventy/render-plugin");
+	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 
 	// Add Sass Scss plugin and configure
