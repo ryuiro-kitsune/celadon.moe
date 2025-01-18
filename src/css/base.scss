@@ -43,11 +43,24 @@ $base-size: 20px;
 }
 
 article {
-  .e-content:after {
-    position: relative;
-    content: url(/images/logo.svg);
-    height: 12px;
-    width: 12px;
+  .p-content p:last-child:after {
+    font-family: "Noto Sans Runic", serif;
+    font-weight: 1000;
+    font-style: normal;
+    content: "\16d6";
+    display: inline;
+    font-size: .9em;
+    line-height: 0.7;
+    display: inline;
+    border-radius: 50%;
+    background-color: $green;
+    color: $text;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
 

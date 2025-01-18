@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: about-index
 title: Cellie's About page
 ---
 

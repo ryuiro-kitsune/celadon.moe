@@ -1,0 +1,22 @@
+---
+eleventyImport:
+    collections: ['blog']
+---
+<!DOCTYPE html>
+<html>
+<head-bp>
+    <title>Sketches in UTF-8 Blog</title>
+</head-bp>
+<body>
+    <cellie-menu></cellie-menu>
+    <main>
+        <section class="h-feed">
+            <h3 class="p-name">Blog Post Archive</h3>
+            <p>By <a class="h-card" rel="me" href="https://celadon.moe">Cellie</a></p>
+            <ul>
+                <blog-feed :@blogs="$data.collections.blog"></blog-feed>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
