@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/main.css">
+        <title>Sketches in Ascii</title>
+        <link rel="stylesheet" href="mark-3.css">
     </head>
+    <style>
+        .metatext {
+            float:left;
+            width: 25%;
+        }
+        .content {
+            float: right;
+            width: 75%;
+            padding-left: 25px;
+        }
+        .content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.metatext::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
     <body>
+        <!-- <div class="metatext"> -->
+        <progress value="1" max="100"></progress>
+            {% include "menu.html" %}
+        <!-- </div> -->
         <main>
-        <h1>Oopsie Woopsie!</h1>
-        <p>I bwoke the website :(</p>
+        <p>Greetings friends and enemies! I welcome you all to my humble slice of land on this raging sea we call the internet and I hope you enjoy your stay.</p>
+        <p>Feel free to take off your coats and sit yourselves down in my drawing room while I fix us all some coffee and/or tea.</p>
+        <p>&mdash;<a class="h-card" rel=me href="https://celadon.moe">Cellie Camellia</a></p>
         </main>
+        {% include "footer.html" %}
     </body>
 </html>

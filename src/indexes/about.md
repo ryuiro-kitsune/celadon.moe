@@ -1,6 +1,7 @@
 ---
-layout: about-index
+layout: index
 title: Cellie's About page
+permalink: "about/"
 ---
 
 Greetings friends.

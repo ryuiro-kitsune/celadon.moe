@@ -1,12 +1,13 @@
+{% extends "base.njk" %}
 
+{% block title %}
 <title>{{ title }}</title>
-{% renderTemplate "webc" %}
-<head-bp></head-bp>
-{% endrenderTemplate %}
+{% endblock %}
 
+{% block content %} 
 <article class="h-entry">
 <h1 class="p-name">{{title}}</h1>
+	<div class="p-content">{{ content | safe }}</div>
 <p>Written by <a class="p-author h-card" href="https://celadon.moe/">Celadon Camellia</a> and published <time class="dt-published" datetime="{{ page.date.toISOString() | truncate(10,false,"") }}">{{page.date.toUTCString() | truncate(16,true,' ') }}</time>
 </article>
-	<div class="p-content">{{ content | safe }}</div>
-
+{% endblock %}

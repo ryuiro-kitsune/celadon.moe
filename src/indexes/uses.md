@@ -1,6 +1,7 @@
 ---
 title: Cellie's uses page
-layout: blog
+layout: index
+permalink: "uses/"
 ---
 
 Things I "use" regularly.
