@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: ryuiro-kitsune/celadon.moe
+  branch: main # Branch to update (optional; defaults to master)
+  site_domain: https://celadon.moe
+  use_graphql: true
+  base_url: https://celadon.moe
+  auth_endpoint: /api/auth
+media_folder: "src/images/"
+public_folder: "/images"
+publish_mode: simple
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", picker_utc: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: note
+    label: Note
+    folder: src/notes
+    create: true
+    identifier_field: body
+    slug: "{{year}}{{month}}{{day}}{{hour}}{{minute}}"
+    fields:
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "note-page" }
+      - { label: "Body", name: "body", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "notes" }
+  - name: "article"
+    label: "Article"
+    folder: src/articles
+    description: "Longer articles that require research."
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Body", name: "body", widget: "markdown" }
