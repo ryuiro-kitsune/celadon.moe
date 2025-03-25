@@ -9,7 +9,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("src/key.pub");
     eleventyConfig.addPassthroughCopy("src/admin/");
-    //eleventyConfig.addPassthroughCopy("src/css/");
+    eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addPassthroughCopy("*.xhtml");
     eleventyConfig.addPassthroughCopy("src/js/");
     eleventyConfig.addPassthroughCopy("src/celadon-moe.js");
@@ -23,17 +23,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 
-	// Add Sass Scss plugin and configure
-	eleventyConfig.addTemplateFormats("scss");
-	eleventyConfig.addExtension("scss", {
-		outputFileExtension: "css",
-		compile: async function (inputContent) {
-			let result = sass.compileString(inputContent);
-			return async (data) => {
-				return result.css;
-			};
-		},
-	});
+	
 	//RSS Feed Configutation 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
