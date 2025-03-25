@@ -1,0 +1,12 @@
+{% extends "base.njk" %}
+
+{% block head %}
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="microsub" href="https://aperture.p3k.io/microsub/1001">
+<link rel="pgpkey" href="https://celadon.moe/key.pub">
+{% endblock %}
+
+{% block content %}
+	{{ content | safe }}
+{% endblock %}
