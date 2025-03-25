@@ -1,0 +1,153 @@
+@font-face {
+    font-family: eb-garamond;
+    src: url('/css/font.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+$font-stack: "EB Garamond";
+
+// Catppuccin Latte scheme
+$rosewater: #dc8a78;
+$flamingo: #dd7878;
+$pink: #ea76cb;
+$mauve: #8839ef;
+$red: #d20f39;
+$maroon: #e64553;
+$peach: #fe640b;
+$yellow: #df8e1d;
+$green: #40a02b;
+$teal: #179299;
+$sky: #04a5e5;
+$sapphire: #209fb5;
+$blue: #1e66f5;
+$lavender: #7287fd;
+$text: #4c4f69;
+$subtext1: #5c5f77;
+$subtext0: #6c6f85;
+$overlay2: #7c7f93;
+$overlay1: #8c8fa1;
+$overlay0: #9ca0b0;
+$surface2: #acb0be;
+$surface1: #bcc0cc;
+$surface0: #ccd0da;
+$base: #eff1f5;
+$mantle: #e6e9ef;
+$crust: #dce0e8;
+
+//15--25px
+//$base-size: clamp(15px,17px,25px);
+$base-size: 20px;
+
+@mixin smol-centering {
+  display: grid;
+  place-content: center;
+}
+
+article {
+  .p-content p:last-child:after {
+    font-family: "Noto Sans Runic", serif;
+    font-weight: 1000;
+    font-style: normal;
+    content: "\16d6";
+    display: inline;
+    font-size: .9em;
+    line-height: 0.7;
+    display: inline;
+    border-radius: 50%;
+    background-color: $green;
+    color: $text;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+    
+
+body {
+  img {
+    max-width: 90%;
+    height: auto;
+}
+  font: 100% $font-stack;
+  font-size: $base-size;
+  color: $text;
+   text-align: justify;
+  text-justify: inter-word;
+
+  // font-feature-settings: "liga" 1;
+  font-variant-ligatures: normal;
+  font-feature-settings: "calt" 1; 
+  // font-feature-settings: "onum";
+  font-variant-numeric: oldstyle-nums;
+   font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: $base;
+  nav {
+      font-size: $base-size * .75;
+      a:hover {
+	  color: $sky;
+    }
+  }
+  main {
+      width: clamp(45ch,60ch,75ch);
+      padding: 1.5rem clamp(1rem,7%,4rem);
+    strong {
+      color: $mauve;
+    }
+    em {
+      color: $peach;
+    }
+
+    article {
+	time {
+            font-size: $base-size;
+            color: $subtext0;
+	    line-height: 1.4;
+	}
+	img {
+	    width: 45ch;
+	}
+	figcaption {
+            font-size: $base-size;
+            color: $subtext1;
+	    width: 45ch;
+	}
+    }
+  }
+  
+}
+
+a {
+    color: $sapphire;
+    text-decoration: none;
+    color: inherit;
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+a:after {
+    position: relative;
+    content: "°";
+    font-size: 90%;
+    top: -0.1em;
+
+    color: $maroon;
+    font-feature-settings: "caps";
+    font-variant-numeric: normal;
+}
+a:hover {
+    color: $green;
+}
+
+footer {
+  ul {
+    li {
+  list-style-type: none;
+display: inline-block;
+padding-right: 1em;
+}
+}
+}
