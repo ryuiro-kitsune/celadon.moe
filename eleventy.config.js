@@ -6,6 +6,7 @@ import pluginWebc from "@11ty/eleventy-plugin-webc";
 //Config
 export default async function(eleventyConfig) {
 	// Passthroughs
+	eleventyConfig.addPassthroughCopy({"node_modules/@colinaut/theme-multi-switch/dist/theme-multi-switch.js": "js/theme-multi-switch.js"})
 	eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("src/key.pub");
     eleventyConfig.addPassthroughCopy("src/admin/");
