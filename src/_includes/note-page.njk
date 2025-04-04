@@ -7,7 +7,7 @@
 {% block content %} 
 <div class="h-entry">
 <a class="u-author" href="/">Cellie</a> said at <time class="dt-published" datetime="{{ page.date.toISOString() | truncate(10,false,"") }}">{{page.date.toUTCString() | truncate(16,true,' ') }}</time>: 
- <div class="p-content">
+ <div class="e-content">
 {{ content | safe }}
  </div>
 </div>

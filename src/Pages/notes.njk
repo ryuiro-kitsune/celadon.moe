@@ -9,7 +9,7 @@ permalink: "notes/"
 <ul>
 {%- for post in collections.notes | reverse -%}
   <li><p class="h-entry"><a class="u-url p-name" href="{{ post.url }}">{{ post.date.toISOString() | truncate(10,false,"") }}</a>
-{{ post.content | truncate(600) | safe }}</p>
+<p class="e-content">{{ post.content | truncate(600) | safe }}</p>
   </li>
 
 {%- endfor -%}

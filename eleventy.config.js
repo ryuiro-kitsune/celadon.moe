@@ -33,6 +33,7 @@ export default async function(eleventyConfig) {
 			name: "blog", // iterate over `collections.posts`
 			limit: 10,     // 0 means no limit
 		},
+		stylesheet: "/css/atom.xsl",
 		metadata: {
 			language: "en",
 			title: "Sketches in UTF-8",
@@ -40,7 +41,7 @@ export default async function(eleventyConfig) {
 			base: "https://celadon.moe/",
 			author: {
 				name: "Cellie Camellia",
-				email: "", // Optional
+				email: "cellie@celadon.moe", // Optional
 			}
 		}
 	});
