@@ -6,6 +6,7 @@ import markdownIt from "markdown-it";
 import markdownItImageFigures from "markdown-it-image-figures";
 import markdownItFootnotes from "markdown-it-footnote";
 
+
 //Config
 export default async function(eleventyConfig) {
 	// Passthroughs
@@ -31,6 +32,26 @@ export default async function(eleventyConfig) {
 			return false;
 		}
 	});
+
+	 // Welcomments configuration
+	 const absoluteUrl = "https://celadon.moe";
+	 eleventyConfig.addFilter("absoluteUrl", (path) => `${absoluteUrl}${path}`);
+	 eleventyConfig.addFilter("objectValues", (object) =>
+	   object ? Object.values(object) : []
+	 );
+	 eleventyConfig.addFilter("whereUnset", (array, key) =>
+	   array.filter((item) => !item[key] || item[key] === "")
+	 );
+	 eleventyConfig.addFilter("where", (array, key, value) =>
+	   array.filter((item) => item[key] === value)
+	 );
+	 eleventyConfig.addFilter("interpolate", (a, b) => `${a}${b}`);
+	 eleventyConfig.addFilter("markdownify", (value) =>
+	   markdownLibrary.render(value)
+	 );
+	 eleventyConfig.addFilter("sortBy", (array, key) =>
+	   array.slice().sort((a, b) => a[key] - b[key])
+	 );
 
 	//Markdown Customizations & Plugins
 	let mdOptions = {
