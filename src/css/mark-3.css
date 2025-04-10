@@ -24,6 +24,9 @@ article .p-content p:last-child:after {
   margin-right: 8px;
 }
 
+.footnotes-sep {
+  margin-top: 12em;
+}
 body {
   font: 100% "EB Garamond";
   font-size: 20px;
