@@ -1,6 +1,6 @@
 ---
 title: Cursed Runes in the Form of a Song
-draft: true
+draft: false
 date: 2025-04-06
 ---
 I've been absolutely obsessed with [this](https://www.youtube.com/watch?v=R-jMqV28dxM) song by Pitbull these past few days.

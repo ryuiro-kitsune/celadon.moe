@@ -1,5 +1,5 @@
 {
-	"layout": "blog",
-	"tags": "blog",
+	"layout": "fiction",
+	"tags": "fiction",
 	"permalink": "/{{ page.date | date: '%Y/%m/%d' }}/{{ title }}/index.html"
 }
