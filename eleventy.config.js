@@ -2,6 +2,8 @@
 import * as sass from "sass";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginWebc from "@11ty/eleventy-plugin-webc";
+import markdownIt from "markdown-it";
+import markdownItImageFigures from"markdown-it-image-figures" ;
 
 //Config
 export default async function(eleventyConfig) {
@@ -28,7 +30,19 @@ export default async function(eleventyConfig) {
 			return false;
 		}
 	});
-	
+
+	//Markdown Customizations & Plugins
+	let mdOptions = {
+		html: true,
+		breaks: true,
+		linkify: false,
+	};
+	eleventyConfig.setLibrary("md", markdownIt(mdOptions));
+	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItImageFigures, {
+		figcaption: true
+	}
+	));
+
 	//RSS Feed Configutation 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"

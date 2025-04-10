@@ -8,6 +8,7 @@
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@colinaut/theme-multi-switch": "^0.8.2",
+    "@netlify/functions": "^3.0.4",
     "a-sync-waterfall": "^1.0.1",
     "acorn": "^7.4.1",
     "ansi-styles": "^4.3.0",
@@ -209,6 +210,7 @@
   "license": "ISC",
   "devDependencies": {
     "lodash": "^4.17.21",
+    "markdown-it-image-figures": "^2.1.1",
     "netlify-plugin-cache-folder": "^0.0.8",
     "node-fetch": "^3.3.2"
   }
