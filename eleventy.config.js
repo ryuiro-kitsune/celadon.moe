@@ -23,7 +23,11 @@ export default async function(eleventyConfig) {
 	let EleventyRenderPlugin = eleventyConfig.resolvePlugin("@11ty/eleventy/render-plugin");
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
-
+	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
 	
 	//RSS Feed Configutation 
 	eleventyConfig.addPlugin(feedPlugin, {
