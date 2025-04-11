@@ -9,9 +9,11 @@
 	}} -->
 	<ul>
 		{%- for entry in navPages %}
+		{% if not entry.draft %}
 		  <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
 			<a href="{{ entry.url }}">{{ entry.title }}</a>
 		  </li>
+		  {% endif %}
 		{%- endfor %}
 		</ul>
 	
