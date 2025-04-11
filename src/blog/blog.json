@@ -1,5 +1,12 @@
 {
 	"layout": "blog",
 	"tags": "blog",
+	"eleventyComputed": {
+	"eleventyNavigation": {
+		"key": "{{title}}",
+		"parent": "Blog"
+	
+	}
+	},
 	"permalink": "/{{ page.date | date: '%Y/%m/%d' }}/{{ title }}/index.html"
 }

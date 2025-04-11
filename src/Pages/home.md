@@ -1,6 +1,9 @@
 ---
 layout: index
 permalink: /
+eleventyNavigation:
+    key: Home
+    order: 1
 ---
  <div class="h-card">
                 <p>

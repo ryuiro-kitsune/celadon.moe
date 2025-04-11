@@ -1,7 +1,9 @@
 ---
 title: WebWeaving Resources
 layout: index
-permalink: /resources
+permalink: /resources/
+eleventyNavigation:
+    key: Resources
 ---
 
 # Thinkpieces

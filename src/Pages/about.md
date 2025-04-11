@@ -2,6 +2,8 @@
 layout: index
 title: Cellie's About page
 permalink: "about/"
+eleventyNavigation:
+    key: About Me
 ---
 
 Greetings friends.

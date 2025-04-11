@@ -210,6 +210,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy-navigation": "^1.0.4",
     "lodash": "^4.17.21",
     "markdown-it-image-figures": "^2.1.1",
     "netlify-plugin-cache-folder": "^0.0.8",

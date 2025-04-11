@@ -2,6 +2,8 @@
 title: Sketches in Ascii links
 layout: index
 permalink: "link-wall/"
+eleventyNavigation:
+    key: Links
 ---
 
 #### Want to link this site on yours? Use this button!

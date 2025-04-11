@@ -5,6 +5,7 @@ import pluginWebc from "@11ty/eleventy-plugin-webc";
 import markdownIt from "markdown-it";
 import markdownItImageFigures from "markdown-it-image-figures";
 import markdownItFootnotes from "markdown-it-footnote";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 
 //Config
@@ -85,6 +86,9 @@ export default async function(eleventyConfig) {
 			}
 		}
 	});
+
+	//Navigation Plugin
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
 	//Webc configuration
 	eleventyConfig.addPlugin(pluginWebc, {

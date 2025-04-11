@@ -1,3 +1,8 @@
 {
-    "layout": "index"
+    "layout": "index",
+    "eleventyComputed": {
+	"eleventyNavigation": {
+		"key": "{{title}}",
+	}
+	}
 }
