@@ -2,7 +2,7 @@
     "layout": "index",
     "eleventyComputed": {
 	"eleventyNavigation": {
-		"key": "{{title}}",
+		"key": "{{title}}"
 	}
 	}
 }
