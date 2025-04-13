@@ -8,5 +8,5 @@
 	
 	}
 	},
-	"permalink": "/{{ page.date | date: '%Y/%m/%d' }}/{{ title }}/index.html"
+	"permalink": "/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/index.html"
 }
