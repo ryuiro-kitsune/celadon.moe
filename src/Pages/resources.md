@@ -1,5 +1,5 @@
 ---
-title: WebWeaving Resources
+title: Resources that I found valuable
 layout: index
 permalink: /resources/
 eleventyNavigation:
@@ -13,4 +13,8 @@ eleventyNavigation:
 ## General
 - [Analog Office](https://analogoffice.net/)
 ## Notebook Organization
-- [https://www.highfivehq.com/](https://www.highfivehq.com/)
+- [The Highfive Notebook](https://www.highfivehq.com/)
+- [Bullet Journal](https://bulletjournal.com/)
+
+# Food
+- [Cookwell](https://www.cookwell.com/)
