@@ -8,10 +8,18 @@ eleventyNavigation:
 
 Things I "use" regularly.
 
-+ Arch Linux
-+ tmux
++ Linux Mint
++ VSCode
 + Ipad Air
 + Fieldnotes Notebooks
++ Leuchtturm1917 A5 Notebooks
 + 8bitdo controllers
-+ Lamy Fountain pens
++ Lamy Fountain Safari
++ Kaweco Sport
++ Pentel Orenz
++ Kobo
++ Cheap Pourover funnel
++ Drip Machine
++ Aeropress
++ Moka pot (I think I have too many coffee machines TT)
 
