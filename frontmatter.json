@@ -41,6 +41,35 @@
       ]
     }
   ],
+    "frontMatter.data.files": [{
+    "id": "notes",
+    "title": "Notes",
+    "file": "[[workspace]]/src/_data/notes.json",
+    "labelField": "time",
+    "singleEntry": false,
+    "schema": {
+      "title": "Notes",
+      "type": "object",
+      "required": [
+        "time",
+        "body"
+      ],
+      "properties": {
+        "body": {
+          "type": "string",
+          "title": "Body"
+        },
+        "time": {
+          "type": "string",
+          "title": "time"
+        },
+        "tags": {
+          "type": "array",
+          "title": "Tags"
+        }
+      }
+    }
+  }]
   "frontMatter.framework.id": "11ty",
   "frontMatter.preview.host": "http://localhost:8080",
   "frontMatter.content.pageFolders": [
