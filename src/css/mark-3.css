@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond+Initials:ital,wght@0,400..800;1,400..800&display=swap");
 @font-face {
   font-family: eb-garamond;
   src: url("/css/font.otf");
@@ -22,6 +23,31 @@ article .p-content p:last-child:after {
   padding-right: 5px;
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.e-content p:first-of-type:first-letter {
+  font-family: "EB Garamond Initials";
+  float: left;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding-top: 4px;
+  padding-right: 6px;
+}
+
+.footnote-content p:first-of-type:first-letter,
+.footnotes p:first-of-type:first-letter,
+ blockquote p:first-of-type:first-letter,
+ figcaption p:first-of-type:first-letter {
+  float:inherit;
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  padding:inherit;
+  initial-letter:inherit;
+  color: inherit;
+  -webkit-initial-letter:inherit;
+  line-height:inherit
 }
 
 .footnotes-sep {
