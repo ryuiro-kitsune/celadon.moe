@@ -3,7 +3,7 @@ title: Updated Site to Use a New Navigation Sytem!
 description: ""
 date: 2025-04-11T22:06:59.634Z
 preview: ""
-draft: true
+draft: false
 tags: []
 ---
 Kinda.
