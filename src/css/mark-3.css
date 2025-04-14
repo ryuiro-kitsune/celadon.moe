@@ -77,6 +77,9 @@ body nav {
 body nav a:hover {
   color: #04a5e5;
 }
+nav a:visited {
+  color: inherit;
+}
 body main {
   width: 60ch;
   padding: 1.5rem clamp(1rem, 7%, 4rem);
