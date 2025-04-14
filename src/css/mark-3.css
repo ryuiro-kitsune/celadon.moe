@@ -119,7 +119,9 @@ a:after {
   font-variant-numeric: normal;
 }
 
-a:hover {
+
+
+a:hover,a:visited {
   color: #40a02b;
 }
 
