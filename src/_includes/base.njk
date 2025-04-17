@@ -10,7 +10,8 @@
 		{# <script src="/js/theme-multi-switch.js"></script> #}
 		<link rel="icon" href="/images/logo.svg">
 		{% block head %}{% endblock %}
-		{% block title %}<title>{{ title }}</title>{% endblock %}
+		{# Sketches in Ascii since Mar 31, 2023! #}
+		{% block title %}<title>Sketches in Ascii: {{ title }}</title>{% endblock %}
 	</head>
 
 	<style>
@@ -21,7 +22,7 @@
 		{% block menu %}
 			{% include "menu.html" %}
 		{% endblock %}
-		<main>
+		<main id="main" tabindex="-1">
 			{% block content %}{% endblock %}
 		</main>
 		{% include "footer.html" %}
