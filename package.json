@@ -78,6 +78,7 @@
     "has-tostringtag": "^1.0.0",
     "htmlparser2": "^7.2.0",
     "http-equiv-refresh": "^1.0.0",
+    "html-minifier-terser":  "^7.2.0",
     "immutable": "^4.3.6",
     "inflight": "^1.0.6",
     "inherits": "^2.0.4",
