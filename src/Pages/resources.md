@@ -10,6 +10,7 @@ eleventyNavigation:
 
 # Thinkpieces
 - [Static, dynamic](https://jamesg.blog/2025/01/15/static-dynamic)
+- [Twitterlike is a Bad Shape](https://osteophage.neocities.org/essays/twitterlike)
 
 # Analogue Living 
 ## General/Uncataegorized 
