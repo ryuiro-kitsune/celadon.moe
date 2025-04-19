@@ -11,6 +11,26 @@ import htmlmin from "html-minifier-terser";
 
 //Config
 export default async function(eleventyConfig) {
+	eleventyConfig.addTransform("htmlmin", function (content) {
+		if ((this.page.outputPath || "").endsWith(".html")) {
+			let minified = htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+				minifyCSS: true,
+				minifyJS: true,
+				minifyURLs: true,
+				removeRedundantAttributes: true,
+			});
+
+			return minified;
+		}
+
+		// If not an HTML output, return content as-is
+		return content;
+	});
+
+
 	// Passthroughs
 	eleventyConfig.addPassthroughCopy({"node_modules/@colinaut/theme-multi-switch/dist/theme-multi-switch.js": "js/theme-multi-switch.js"})
 	eleventyConfig.addPassthroughCopy("assets");
@@ -29,20 +49,7 @@ export default async function(eleventyConfig) {
 	let EleventyRenderPlugin = eleventyConfig.resolvePlugin("@11ty/eleventy/render-plugin");
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
-eleventyConfig.addTransform("htmlmin", function (content) {
-		if ((this.page.outputPath || "").endsWith(".html")) {
-			let minified = htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true,
-			});
 
-			return minified;
-		}
-
-		// If not an HTML output, return content as-is
-		return content;
-	});
 
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {

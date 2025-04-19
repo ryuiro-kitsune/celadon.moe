@@ -1,5 +1,5 @@
 ---
-title: A short review of "How to Survive in the Woods"
+title: A short review of How to Survive in the Woods
 date: 2024-07-28
 ---
 
