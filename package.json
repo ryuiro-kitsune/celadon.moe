@@ -130,6 +130,7 @@
     "multimatch": "^5.0.0",
     "mustache": "^4.2.0",
     "neo-async": "^2.6.2",
+    "netlify-plugin-cache": "^1.0.3",
     "normalize-path": "^3.0.0",
     "nunjucks": "^3.2.3",
     "object-assign": "^4.1.1",
