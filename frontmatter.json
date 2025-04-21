@@ -47,6 +47,7 @@
     "file": "[[workspace]]/src/_data/notes.json",
     "labelField": "time",
     "singleEntry": false,
+    "enableFileCreation": true,
     "schema": {
       "title": "Notes",
       "type": "object",

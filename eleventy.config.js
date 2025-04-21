@@ -1,5 +1,4 @@
 //Imports
-import * as sass from "sass";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginWebc from "@11ty/eleventy-plugin-webc";
 import markdownIt from "markdown-it";
@@ -7,8 +6,16 @@ import markdownItImageFigures from "markdown-it-image-figures";
 import markdownItFootnotes from "markdown-it-footnote";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import htmlmin from "html-minifier-terser";
+import futurePost from "eleventy-plugin-future-post";
 
 
+
+export const config = {
+	dir: {
+	input: "src",
+	output: "_site"
+	},
+};
 //Config
 export default async function(eleventyConfig) {
 	eleventyConfig.addTransform("htmlmin", function (content) {
@@ -89,6 +96,8 @@ export default async function(eleventyConfig) {
 	}));
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnotes));
 
+	eleventyConfig.addPlugin(futurePost, { debugMode: false });
+
 	//RSS Feed Configutation 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
@@ -100,8 +109,8 @@ export default async function(eleventyConfig) {
 		stylesheet: "/css/atom.xsl",
 		metadata: {
 			language: "en",
-			title: "Sketches in UTF-8",
-			subtitle: "The Offcial Home of Cellie Camellia (Formerly Sketches in Ascii)",
+			title: "Sketches in Ascii",
+			subtitle: "The Offcial Home of Cellie Camellia",
 			base: "https://celadon.moe/",
 			author: {
 				name: "Cellie Camellia",
@@ -142,10 +151,4 @@ export default async function(eleventyConfig) {
     });
 };
 
-export const config = {
-		dir: {
-		input: "src",
-		output: "_site"
-		}
-	};
 
