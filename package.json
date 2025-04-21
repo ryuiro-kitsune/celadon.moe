@@ -5,6 +5,7 @@
   "type": "module",
   "main": "eleventy.config.js",
   "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-fetch": "^5.0.2",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
@@ -52,7 +53,6 @@
     "domutils": "^2.8.0",
     "ee-first": "^1.1.1",
     "ejs": "^3.1.9",
-    "eleventy-plugin-future-post": "^0.0.2",
     "encodeurl": "^1.0.2",
     "entities": "^3.0.1",
     "errno": "^0.1.8",
@@ -214,6 +214,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.4",
+    "eleventy-plugin-future-post": "^0.0.2",
     "html-minifier-terser": "^7.2.0",
     "lodash": "^4.17.21",
     "markdown-it-image-figures": "^2.1.1",

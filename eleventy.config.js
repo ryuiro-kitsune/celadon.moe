@@ -64,6 +64,18 @@ export default async function(eleventyConfig) {
 		}
 	});
 
+	const currentDate = new Date();
+    const timeOffsetInMS = currentDate.getTimezoneOffset() * 60000;
+
+    eleventyConfig.addPreprocessor("futurePosts", "*", (data, content) => {
+		var pageDate = new Date(data.page.date);
+            pageDate.setTime(pageDate.getTime() + timeOffsetInMS);
+		if(pageDate > currentDate) {
+			return false
+		}
+	});
+		
+
 	 // Welcomments configuration
 	 const absoluteUrl = "https://celadon.moe";
 	 eleventyConfig.addFilter("absoluteUrl", (path) => `${absoluteUrl}${path}`);
@@ -96,7 +108,7 @@ export default async function(eleventyConfig) {
 	}));
 	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnotes));
 
-	eleventyConfig.addPlugin(futurePost, { debugMode: false });
+	
 
 	//RSS Feed Configutation 
 	eleventyConfig.addPlugin(feedPlugin, {
