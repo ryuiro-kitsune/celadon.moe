@@ -1,5 +1,5 @@
 [build]  
-command   = "npm run build"
+command   = "NODE_ENV=production npx @11ty/eleventy"
 
 
 [[plugins]]
