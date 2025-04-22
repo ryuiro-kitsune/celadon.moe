@@ -69,7 +69,7 @@ export default async function(eleventyConfig) {
 
     eleventyConfig.addPreprocessor("futurePosts", "*", (data, content) => {
 		var pageDate = new Date(data.page.date);
-            pageDate.setTime(pageDate.getTime() + timeOffsetInMS);
+            pageDate.setTime(pageDate.getTime());
 		if(pageDate > currentDate) {
 			return false
 		}
