@@ -74,7 +74,7 @@ export default async function(eleventyConfig) {
 			return false
 		}
 	});
-		
+	eleventyConfig.addFilter("parseFormatDate", (strDate) => Date(strDate));
 
 	 // Welcomments configuration
 	 const absoluteUrl = "https://celadon.moe";

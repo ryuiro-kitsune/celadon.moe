@@ -1,0 +1,21 @@
+---
+layout: blog
+title: Round 1 NHL Playoffs 2025 Semi-liveblog
+tags: blog
+permalink: "lb/2025-nhl-r1/"
+eleventyNavigation:
+    parent: blog
+    key: Round 1 NHL Playoffs 2025
+---
+
+{% for note in tampaPanthers2025 %}
+{% if note.body %}
+
+<h3>{{note.time | parseFormatDate}}</h3>
+<p>
+    {{note.body}}
+</p>
+<hr>
+{% endif %}
+{% endfor %}
+{# Doe snot work, fix #}
