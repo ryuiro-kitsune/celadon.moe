@@ -1,24 +1,25 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="webmention" href="https://webmention.io/celadon.moe/webmention" />
 		<link rel="pingback" href="https://webmention.io/celadon.moe/xmlrpc" />
-		{# <link rel="stylesheet" href="/css/{{ css | default("mark-3")}}.css"> #}
+		 <link rel="stylesheet" href="/css/{{ css | default("mark-3")}}.css"> 
 		{# <script src="/js/theme-multi-switch.js"></script> #}
-		<link rel="stylesheet" href="css/dist/gutenberg.css" media="print">
+		<!--<script src="node_modules/@blaze/atoms/dist/blaze-atoms.js"></script>-->	<link rel="stylesheet" href="css/dist/gutenberg.css" media="print">
 		<link rel="stylesheet" href="css/dist/themes/oldstyle.css" media="print"> <!-- optional -->	
+		<!--<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">-->
 		<link rel="icon" href="/images/logo.svg">
 		{% block head %}{% endblock %}
 		{# Sketches in Ascii since Mar 31, 2023! #}
 		{% block title %}<title>Sketches in Ascii: {{ title }}</title>{% endblock %}
 
-	<style>
+
 		{% block style %}
-		{% include "css/mark-3.css" %}
+		{#{% include "css/mark-3.css" %}#}
 		{% endblock %}
-	</style>
+
 	</head>
 	<body>
 
