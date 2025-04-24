@@ -7,6 +7,7 @@ eleventyNavigation:
 ---
 # Links
 - [Indieseek](https://indieseek.xyz/links/)
+- [Thread Lurker](https://threadlurker.neocities.org/)
 
 # Thinkpieces
 - [Static, dynamic](https://jamesg.blog/2025/01/15/static-dynamic)
