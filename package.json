@@ -42,7 +42,7 @@
     "concat-map": "^0.0.1",
     "constantinople": "^4.0.1",
     "cross-spawn": "^7.0.3",
-    "dayjs": "^1.11.7",
+    "dayjs": "^1.11.13",
     "debug": "^4.3.4",
     "dependency-graph": "^0.11.0",
     "dev-ip": "^1.0.1",

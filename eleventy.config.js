@@ -7,6 +7,7 @@ import markdownItFootnotes from "markdown-it-footnote";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import htmlmin from "html-minifier-terser";
 import futurePost from "eleventy-plugin-future-post";
+import dayjs from "dayjs";
 
 
 
@@ -74,7 +75,7 @@ export default async function(eleventyConfig) {
 			return false
 		}
 	});
-	eleventyConfig.addFilter("parseFormatDate", (strDate) => Date(strDate));
+	eleventyConfig.addFilter("parseFormatDate", (strDate) => dayjs(strDate).format("H:mm:ss — ddd, MMMM D"));
 
 	 // Welcomments configuration
 	 const absoluteUrl = "https://celadon.moe";
