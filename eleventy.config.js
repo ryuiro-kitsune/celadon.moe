@@ -76,6 +76,8 @@ export default async function(eleventyConfig) {
 		}
 	});
 	eleventyConfig.addFilter("parseFormatDate", (strDate) => dayjs(strDate).format("H:mm:ss — ddd, MMMM D"));
+	const md = markdownIt()
+	eleventyConfig.addFilter("markdown", (markup) => md.render(markup));
 
 	 // Welcomments configuration
 	 const absoluteUrl = "https://celadon.moe";

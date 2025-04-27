@@ -1,5 +1,8 @@
 ---
 title: Cursed Runes in the Form of a Song
+subject: American War by Pitbull
+series: Talking About Music
+cover: free-agent.png
 draft: false
 date: 2025-04-06
 ---

@@ -1,0 +1,12 @@
+{
+    "eleventyComputed": {
+	"eleventyNavigation": {
+		"key": "{{title}}",
+		"parent": "Music"
+	
+	}
+	},
+    "permalink": "/talking-about-music/{{title | slug}}/",
+    "layout": "music",
+    "tags": "musicTalk"
+}

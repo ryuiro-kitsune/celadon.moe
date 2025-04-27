@@ -103,7 +103,7 @@ nav a:visited {
 }
 
 body main {
-  width: 60ch;
+  width: 75ch;
   padding: 1.5rem clamp(1rem, 7%, 4rem);
 }
 body main strong {

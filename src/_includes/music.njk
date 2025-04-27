@@ -1,14 +1,17 @@
 {% extends "base.njk" %}
 
 {% block title %}
-<title>{{ title }}</title>
+<title>{{ title }}{% if subject and title %} — {% endif %}{{subject}}</title>
 {% endblock %}
 
 {% block content %}
 <div>
 <article class="h-entry">
-<h1 class="p-name">{{title}}</h1>
-	<div class="e-content">{{ content | safe }}</div>
+<h1>{% if series %}{{series}}: {% endif %}<span class="p-name">{{title}}{% if subject and title %} — {% endif %}{{subject}}</span></h1>
+	{% if cover %}
+    <img {% if subject %}alt="{{subject}} Album Cover"{% endif %} src="/images/albums/{{cover}}">
+    {%endif%}
+    <div class="e-content">{{ content | safe }}</div>
 <p>Written by <a class="p-author h-card" href="https://celadon.moe/">Celadon Camellia</a> and published <time class="dt-published" datetime="{{ page.date.toISOString() | truncate(10,false,"") }}">{{page.date.toUTCString() | truncate(16,true,' ') }}</time>
 </article>
 
