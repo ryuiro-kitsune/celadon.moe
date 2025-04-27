@@ -32,7 +32,9 @@ article .p-content p:last-child:after {
   font-weight: 700;
   line-height: 2rem;
   padding-top: 4px;
-  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: 0;
+  padding-right:0 ;
 }
 
 .footnote-content p:first-of-type:first-letter,
@@ -116,7 +118,7 @@ body main article time {
   line-height: 1.4;
 }
 body main article img {
-  width: 45ch;
+  max-width: 16em;
 }
 body main article figcaption {
   font-size: 20px;
