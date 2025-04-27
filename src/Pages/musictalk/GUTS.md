@@ -2,7 +2,7 @@
 subject: GUTS by Olivia Rodrigo 
 series: Talking About Music
 cover: guts-cover.png
-date: 2024-04-26
+date: 2025-04-26
 ---
 Guts was the first album I ever bought.
 
