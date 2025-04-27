@@ -5,7 +5,6 @@
 {% endblock %}
 
 {% block content %}
-<div>
 <article class="h-entry">
 <h1>{% if series %}{{series}}: {% endif %}<span class="p-name">{{title}}{% if subject and title %} — {% endif %}{{subject}}</span></h1>
 	{% if cover %}
@@ -17,5 +16,4 @@
 
 {% set welcomments_config = {welcomments: welcomments, website_id: "Unnd1pNuNmeE1cdZfE6mFUjWo"} %}
 {% renderFile "./src/_includes/welcomments/comments.liquid", welcomments_config %}
-</div>
 {% endblock %}

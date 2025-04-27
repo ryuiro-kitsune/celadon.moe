@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<div>
+
 <article class="h-entry">
 <h1 class="p-name">{{title}}</h1>
 	<div class="e-content">{{ content | safe }}</div>
@@ -14,5 +14,4 @@
 
 {% set welcomments_config = {welcomments: welcomments, website_id: "Unnd1pNuNmeE1cdZfE6mFUjWo"} %}
 {% renderFile "./src/_includes/welcomments/comments.liquid", welcomments_config %}
-</div>
 {% endblock %}

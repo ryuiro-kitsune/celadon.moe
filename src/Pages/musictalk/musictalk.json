@@ -6,7 +6,7 @@
 	
 	}
 	},
-    "permalink": "/talking-about-music/{{title | slug}}/",
+    "permalink": "/talking-about-music/{% if title %}{{title | slug}}{% endif %}{% if subject and title %}-{% endif %}{% if subject %}{{subject|slug}}{% endif %}/",
     "layout": "music",
     "tags": "musicTalk"
 }
